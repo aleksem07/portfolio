@@ -13,18 +13,24 @@ $fz-18px: 1.125rem;
 $fz-16px: 1rem;
 $fz-14px: 0.875rem;
 
-$color-text-logo: #595653;
-$color-text-main: #313131;
-$color-text-white: #ffffff;
-$color-text-add: #3057a2;
-$color-bg: #e9ded4;
-$color-bg--light: #ffffff;
-$color-bg--border: #d0d0d0;
-$color-bg-button--dark: #1f1f1f;
-$color-bg-button--light-90: rgba(255, 255, 255, 0.9);
-$color-bg-ticker: #f54932;
+$color-brand: #ff9143;
 
-$color-button-default: #313131;
-$color-button-hover: #fbce51;
-$color-button-disable: rgba(49, 49, 49, 0.2);
-$color-button-bullet: #d9d9d9;
+$color-second-dark: #1a1a1a;
+$color-second-dark-light: #262a2c;
+$color-second-gray: #696969;
+$color-second-light: #ffffff;
+$color-second-light--030: rgba(255, 255, 255, 0.3);
+
+$color-grayscale-light--80: #9ea3ae;
+$color-grayscale-light--60: #d3d5da;
+$color-grayscale-light--40: #e5e6eb;
+$color-grayscale-light--20: #f4f4f6;
+$color-grayscale-light: #f9fafb;
+
+$color-grayscale-dark--80: #6c727f;
+$color-grayscale-dark--60: #4d5461;
+$color-grayscale-dark--40: #394150;
+$color-grayscale-dark--20: #212936;
+$color-grayscale-dark: #0b0a0f;
+
+$color-text-dark: #333333;
