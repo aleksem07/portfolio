@@ -1,0 +1,17 @@
+@keyframes ball {
+  0% {
+    border-radius: 30px 40px 50px 70px;
+  }
+  25% {
+    border-radius: 50% 50%;
+  }
+  50% {
+    border-radius: 70px 60px 100px 95px;
+  }
+  75% {
+    border-radius: 50% 10%;
+  }
+  100% {
+    border-radius: 30px 40px 50px 70px;
+  }
+}
