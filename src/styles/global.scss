@@ -22,6 +22,9 @@
 
 body {
   @include body_padding;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {

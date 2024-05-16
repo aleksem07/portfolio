@@ -6,6 +6,7 @@ import MainPage from "../pages/main-page/main-page.tsx";
 import AboutPage from "../pages/about-page/about-page.tsx";
 import WorksPage from "../pages/works-page/works-page.tsx";
 import ContactsPage from "../pages/contacts-page/contacts-page.tsx";
+import Footer from "../footer/footer.tsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path={ROUTES.CONTACTS} element={<ContactsPage />} />
         <Route path="*" element={"no way"} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
