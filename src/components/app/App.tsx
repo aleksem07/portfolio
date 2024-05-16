@@ -2,11 +2,13 @@ import reactLogo from "/src/assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.scss";
 import Header from "../header/Header.tsx";
+import Promo from "../promo/Promo.tsx";
 
 function App() {
   return (
     <>
       <Header />
+      <Promo />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

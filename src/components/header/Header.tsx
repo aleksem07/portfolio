@@ -14,13 +14,13 @@ const Header: React.FC = () => {
       >
         <ul className={styles.nav_list}>
           {NAV_LINKS.map(link => (
-            <li
-              className={`${styles.nav_item} ${
-                link.active ? styles.nav_item_active : ""
-              }`}
-              key={link.name}
-            >
-              <a href={link.href}>{link.name}</a>
+            <li className={`${styles.nav_item}`} key={link.name}>
+              <a
+                className={`${link.active ? styles.nav_item_active : ""}`}
+                href={link.href}
+              >
+                {link.name}
+              </a>
             </li>
           ))}
         </ul>
