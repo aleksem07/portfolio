@@ -8,8 +8,10 @@ import WorksPage from "../pages/works-page/works-page.tsx";
 import ContactsPage from "../pages/contacts-page/contacts-page.tsx";
 import Footer from "../footer/footer.tsx";
 import BackgroundBall from "../background-ball.tsx";
+import WORKLIST from "../../common/work-list.ts";
+import WorkDetail from "../pages/works-page/work-detail.tsx";
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Header />
@@ -17,13 +19,17 @@ function App() {
       <Routes>
         <Route path={ROUTES.MAIN} element={<MainPage />} />
         <Route path={ROUTES.ABOUT} element={<AboutPage />} />
-        <Route path={ROUTES.WORKS} element={<WorksPage />} />
+        <Route path={ROUTES.WORKS} element={<WorksPage works={WORKLIST} />} />
+        <Route
+          path={`${ROUTES.WORKS}/:workId`}
+          element={<WorkDetail works={WORKLIST} />}
+        />
         <Route path={ROUTES.CONTACTS} element={<ContactsPage />} />
         <Route path="*" element={"no way"} />
       </Routes>
       <Footer />
     </>
   );
-}
+};
 
 export default App;
