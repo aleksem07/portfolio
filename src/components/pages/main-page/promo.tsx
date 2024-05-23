@@ -1,7 +1,6 @@
 import styles from "/src/styles/components/promo.module.scss";
 import { Link } from "react-router-dom";
-import ROUTES from "../../common/routes";
-import Logo from "../logo";
+import ROUTES from "../../../common/routes";
 
 const Promo = () => {
   return (
@@ -10,7 +9,7 @@ const Promo = () => {
       <h2 className={styles.promo__title}>
         Adaptive Logo Design for Your Brand
       </h2>
-      <Link className={styles.promo__button} to={ROUTES.WORKS}>
+      <Link className="button" to={ROUTES.WORKS}>
         Explore WORKS
       </Link>
     </section>

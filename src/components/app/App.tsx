@@ -1,5 +1,5 @@
 import "./App.scss";
-import Header from "../header/Header.tsx";
+import Header from "../header/header.tsx";
 import { Routes, Route } from "react-router-dom";
 import ROUTES from "../../common/routes.ts";
 import MainPage from "../pages/main-page/main-page.tsx";

@@ -54,3 +54,14 @@ a {
 [class*="container"] {
   padding-inline: 5%;
 }
+
+.button {
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: $fz-14px;
+  line-height: 15px;
+  letter-spacing: 1.63px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text-button;
+}
