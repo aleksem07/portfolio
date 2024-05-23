@@ -15,8 +15,8 @@ const AboutMe = () => {
         src={placeholder}
         className=""
         alt="Developer`s photo"
-        width={454}
-        height={506}
+        width={361}
+        height={415}
       />
     </>
   );

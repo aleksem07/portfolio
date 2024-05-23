@@ -1,6 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import TelegramIcon from "@mui/icons-material/Telegram";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const CONTACTS = [
   {
@@ -16,7 +17,12 @@ const CONTACTS = [
   {
     name: "mail",
     Icon: MailOutlineIcon,
-    link: "mailto:aleksem07@gmail.com",
+    link: "mailto:aleksem07@gmail.com?subject=Frontend&body=Привет!",
+  },
+  {
+    name: "phone",
+    Icon: LocalPhoneIcon,
+    link: "tel:-79102244000",
   },
 ];
 
