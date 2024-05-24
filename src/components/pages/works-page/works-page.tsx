@@ -14,7 +14,7 @@ const WorksPage: React.FC<WorksListProps> = ({ works }) => {
   }
   return (
     <div>
-      <h2>My works</h2>
+      <h2>{works[0].name}</h2>
       <p>Showcase About Works</p>
     </div>
   );
