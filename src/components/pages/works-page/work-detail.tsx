@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import NotFound from "../../404";
 export interface Work {
   id: number;
   name: string;
@@ -12,13 +13,13 @@ const WorkDetail: React.FC<WorkDetailProps> = ({ works }) => {
   const { workId } = useParams<{ workId: string }>();
 
   if (!workId) {
-    return <div>Work not found</div>;
+    return <NotFound />;
   }
 
   const work = works.find(p => p.id === parseInt(workId));
 
   if (!work) {
-    return <div>Work not found</div>;
+    return <NotFound />;
   }
 
   return (

@@ -10,6 +10,7 @@ import Footer from "../footer/footer.tsx";
 import BackgroundBall from "../background-ball.tsx";
 import WORKLIST from "../../common/work-list.ts";
 import WorkDetail from "../pages/works-page/work-detail.tsx";
+import NotFound from "../404.tsx";
 
 const App: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ const App: React.FC = () => {
           element={<WorkDetail works={WORKLIST} />}
         />
         <Route path={ROUTES.CONTACTS} element={<ContactsPage />} />
-        <Route path="*" element={"no way"} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
