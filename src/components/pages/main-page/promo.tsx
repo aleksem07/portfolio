@@ -7,7 +7,7 @@ const Promo = () => {
     <section className={styles.promo}>
       <h1 className="visually_hidden">Портфолио Алексей Семячкин</h1>
       <h2 className={styles.promo__title}>
-        Adaptive Logo Design for Your Brand
+        Development of a responsive website for your brand
       </h2>
       <Link className="button" to={ROUTES.WORKS}>
         Explore WORKS
