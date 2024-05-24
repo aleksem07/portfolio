@@ -2,11 +2,13 @@ import styles from "/src/styles/components/header.module.scss";
 import NAV_LINKS from "../../common/nav-links";
 import { Link } from "react-router-dom";
 import Logo from "../logo/logo";
+import ChooseLanguage from "../choose-language";
 
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <Logo />
+      <ChooseLanguage />
       <nav
         className={`${styles.header_nav} ${styles.nav}`}
         role="navigation"
