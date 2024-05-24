@@ -9,13 +9,11 @@ interface WorksListProps {
 }
 
 const WorksPage: React.FC<WorksListProps> = ({ works }) => {
-  {
-    console.log(works);
-  }
   return (
     <div>
-      <h2>{works[0].name}</h2>
+      <h2>My works</h2>
       <p>Showcase About Works</p>
+      <p>{works[0].name}</p>
     </div>
   );
 };

@@ -22,6 +22,9 @@
 
 body {
   @include body_padding;
+}
+
+#root {
   height: 100vh;
   display: flex;
   flex-direction: column;
