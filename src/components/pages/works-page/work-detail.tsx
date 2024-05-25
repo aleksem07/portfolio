@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import NotFound from "../../404";
+import NotFound from "../404";
 export interface Work {
   id: number;
   name: string;

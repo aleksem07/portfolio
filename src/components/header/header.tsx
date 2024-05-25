@@ -1,10 +1,11 @@
 import styles from "/src/styles/components/header.module.scss";
-import NAV_LINKS from "../../common/nav-links";
 import { Link } from "react-router-dom";
 import Logo from "../logo/logo";
 import ChooseLanguage from "../choose-language";
+import NavLinks from "../../common/nav-links";
 
 const Header: React.FC = () => {
+  const NAV_LINKS = NavLinks();
   return (
     <header className={styles.header}>
       <Logo />

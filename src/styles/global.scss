@@ -59,14 +59,24 @@ a {
 }
 
 .button {
+  padding: 24px 40px;
   font-family: Rubik;
   font-weight: 700;
   font-size: $fz-14px;
   line-height: 15px;
-  letter-spacing: 1.63px;
+  letter-spacing: 0.12em;
   text-align: center;
   text-transform: uppercase;
   color: $color-text-button;
+
+  background-color: $color-brand;
+  border-radius: 32px;
+  box-shadow: 0 32px 54px 0 rgba(3, 3, 3, 0.14);
+
+  &:hover {
+    color: $color-text-button--hover;
+    background-color: $color-bcg-button--hover;
+  }
 }
 
 h1,
@@ -79,4 +89,8 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+
+img {
+  object-fit: cover;
 }

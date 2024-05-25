@@ -1,7 +1,35 @@
 {
-  "promo": {
-    "title": "Development of a responsive website for your brand"
+  "h1": "Portfolio of Alexey Semyachkin",
+
+  "navigate": {
+    "home": "Home",
+    "about": "About me",
+    "works": "My works",
+    "contacts": "Contacts"
   },
-  "welcome": "Welcome to my house",
-  "goodbye": "Goodbye"
+
+  "select_lang": {
+    "choose": "Choose language",
+    "en": "English",
+    "ru": "Russian"
+  },
+
+  "buttons": {
+    "explore_works": "Explore Works",
+    "about": "Discover more about me",
+    "explore_more": "Explore more"
+  },
+
+  "promo": {
+    "title": "Development of a responsive Website for your brand"
+  },
+
+  "photo": {
+    "dev_alt": "Developer`s photo"
+  },
+
+  "get_know_me": {
+    "title": "Let’s get know about me closer",
+    "text": "I will help you save time and money on developing your brand. The portfolio presents a wide range of works."
+  }
 }

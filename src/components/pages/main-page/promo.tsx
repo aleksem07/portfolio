@@ -8,10 +8,9 @@ const Promo = () => {
 
   return (
     <section className={styles.promo}>
-      <h1 className="visually_hidden">Портфолио Алексей Семячкин</h1>
       <h2 className={styles.promo__title}>{t("promo.title")}</h2>
       <Link className="button" to={ROUTES.WORKS}>
-        Explore WORKS
+        {t("buttons.explore_works")}
       </Link>
     </section>
   );

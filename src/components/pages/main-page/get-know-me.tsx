@@ -1,28 +1,23 @@
-import placeholder from "/src/assets/placeholder-pic.jpg";
 import ROUTES from "../../../common/routes";
 import { Link } from "react-router-dom";
+import MyPhoto from "../../my-photo/my-photo";
+import styles from "/src/styles/components/get-know-me.module.scss";
+import { useTranslation } from "react-i18next";
 
 const GetKnowMe = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="getKnowMe">
-      <div className="getKnowMe__desc">
-        <h3>Let’s get know about me closer</h3>
-        <p>
-          Aaronn is a New York-based visual designer focusing on branding and
-          visual identity. Her portfolio showcases her wide range of work,
-          spanning books, posters and web design.
-        </p>
+    <section className={styles.get_know_me}>
+      <div className={styles.get_know_me__desc}>
+        <h3 className={styles.get_know_me__title}>{t("get_know_me.title")}</h3>
+        <p className={styles.get_know_me__text}>{t("get_know_me.text")}</p>
         <Link className="button" to={ROUTES.ABOUT}>
-          Discover More About Me
+          {t("buttons.about")}
         </Link>
       </div>
-      <img
-        src={placeholder}
-        className=""
-        alt="Developer`s photo"
-        width={454}
-        height={506}
-      />
+
+      <MyPhoto />
     </section>
   );
 };

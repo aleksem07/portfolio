@@ -1,6 +1,7 @@
 @import "/src/styles/+.scss";
 
 .header {
+  margin-bottom: 138px;
   padding-block: 48px;
   text-transform: uppercase;
   width: 100%;
@@ -28,10 +29,15 @@
   line-height: 17px;
   opacity: 0.5;
 
+  &:has(.nav_item_active) {
+    opacity: 1;
+  }
+
   &_active {
     padding: 15px 36px;
     border: 2px solid $color-second-light--030;
     border-radius: 30px;
-    opacity: 0.8;
+    background-color: $color-grayscale-dark;
+    color: $color-second-light;
   }
 }

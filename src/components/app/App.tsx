@@ -10,12 +10,16 @@ import Footer from "../footer/footer.tsx";
 import BackgroundBall from "../background-ball.tsx";
 import WORKLIST from "../../common/work-list.ts";
 import WorkDetail from "../pages/works-page/work-detail.tsx";
-import NotFound from "../404.tsx";
+import NotFound from "../pages/404.tsx";
+import { useTranslation } from "react-i18next";
 
 const App: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
+      <h1 className="visually_hidden">{t("h1")}</h1>
       <BackgroundBall />
       <Routes>
         <Route path={ROUTES.MAIN} element={<MainPage />} />
