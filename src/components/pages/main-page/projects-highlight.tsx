@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import ROUTES from "../../../common/routes";
 import placeholder from "/src/assets/placeholder-pic.jpg";
+import styles from "/src/styles/components/project-higlight.module.scss";
 
 const ProjectsHighlight = () => {
   return (
-    <section>
+    <section className={styles.projects}>
       <h2>My Projects Highlight</h2>
       <Link to={ROUTES.WORKS}>Explore More</Link>
       <ul>

@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import CONTACTS from "../../common/contacts";
+import styles from "/src/styles/components/footer.module.scss";
 
-const Contacts = ({ className }: { className?: string }) => {
+const Contacts = () => {
   return (
     <>
-      <div className={`z-20 flex gap-4 ${className || ""}`}>
+      <div className={styles.footer__body_links}>
         {CONTACTS.map(({ name, Icon, link }) => (
           <Link to={link} target="_blank" key={name}>
-            <Icon className="text-color-black hover:text-color-dark--light transition-all duration-300" />
+            <Icon className="" />
           </Link>
         ))}
       </div>

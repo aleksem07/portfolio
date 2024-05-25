@@ -5,18 +5,20 @@ import Contacts from "./contacts";
 import Phone from "../phone";
 import Email from "../email";
 import City from "../city";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className={styles.footer}>
-      <header>
-        <h4>Get in Touch With Us</h4>
+      <header className={styles.footer__header}>
+        <h4 className={styles.footer__title}>{t("footer.title")}</h4>
         <Email />
       </header>
-      <div>
+      <div className={styles.footer__body}>
         <Logo />
         <City />
-        <div>
+        <div className={styles.footer__body_contacts}>
           <Phone />
           <Contacts />
         </div>

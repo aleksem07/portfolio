@@ -31,5 +31,11 @@
   "get_know_me": {
     "title": "Let’s get know about me closer",
     "text": "I will help you save time and money on developing your brand. The portfolio presents a wide range of works."
+  },
+
+  "footer": {
+    "title": "Get in Touch With Us",
+    "city": "Belgorod",
+    "rights": "All Rights Reserved"
   }
 }

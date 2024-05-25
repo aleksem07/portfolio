@@ -11,3 +11,11 @@
     padding-inline: 5%;
   }
 }
+
+@mixin body_margin {
+  margin-inline: 10%;
+
+  @media screen and (max-width: $width-desktop) {
+    margin-inline: 5%;
+  }
+}

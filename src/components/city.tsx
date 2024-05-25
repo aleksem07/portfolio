@@ -1,5 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const City = () => {
-  return <span>Belgorod</span>;
+  const { t } = useTranslation();
+  return <span>{t("footer.city")}</span>;
 };
 
 export default City;

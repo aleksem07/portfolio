@@ -1,6 +1,7 @@
 @import "/src/styles/+.scss";
 
 .get_know_me {
+  @include body_padding;
   margin-bottom: 290px;
   display: flex;
   justify-content: space-between;
