@@ -2,4 +2,28 @@
 
 .projects {
   @include body_padding;
+  margin-bottom: 166px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__title {
+  font-family: $font-second-family;
+  font-weight: 700;
+  font-size: $fz-64px;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.projects__button {
+  margin-bottom: 76px;
+  margin-inline: auto;
+  display: inline-block;
+}
+
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 27px;
 }

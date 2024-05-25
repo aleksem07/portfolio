@@ -6,16 +6,18 @@ import styles from "/src/styles/components/project-higlight.module.scss";
 const ProjectsHighlight = () => {
   return (
     <section className={styles.projects}>
-      <h2>My Projects Highlight</h2>
-      <Link to={ROUTES.WORKS}>Explore More</Link>
-      <ul>
+      <h2 className={styles.projects__title}>My Projects Highlight</h2>
+      <Link className={`${styles.projects__button} button`} to={ROUTES.WORKS}>
+        Explore More
+      </Link>
+      <ul className={styles.projects__container}>
         <li>
           <img
             src={placeholder}
             className=""
             alt="Developer`s photo"
-            width={454}
-            height={506}
+            width={560}
+            height={768}
           />
           <h3>Brand Journey Improvements</h3>
           <ul>
@@ -27,8 +29,8 @@ const ProjectsHighlight = () => {
             src={placeholder}
             className=""
             alt="Developer`s photo"
-            width={454}
-            height={506}
+            width={560}
+            height={768}
           />
           <h3>Brand Journey Improvements2</h3>
           <ul>
