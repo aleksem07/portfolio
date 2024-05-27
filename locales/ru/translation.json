@@ -22,7 +22,7 @@
   },
 
   "promo": {
-    "title": "Разработка адаптивного Cайта для вашего бренда"
+    "title": "Разработка адаптивного Cайта для вашего бизнеса"
   },
 
   "photo": {
@@ -52,8 +52,8 @@
 
   "testimonial": {
     "title": "Отзывы",
-    "desc": "полный Отзывы",
-    "name": "автор отзыва"
+    "desc": "“Alexey was fantastic to work with from start to finish. We were looking for an outstanding site and it delivered. I tried to develop a website myself, thinking that I would not have to pay money to professional developers, but I was very mistaken. Working with Alexey was worth every penny and was surprisingly affordable! I can't thank Alexey enough for his efforts and professionalism. I would recommend him to anyone looking for a site!”",
+    "name": "Майкл Дэвис"
   },
 
   "footer": {
