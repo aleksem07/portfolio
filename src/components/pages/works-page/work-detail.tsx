@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import NotFound from "../404";
+
 export interface Work {
   id: number;
   name: string;
@@ -26,6 +27,7 @@ const WorkDetail: React.FC<WorkDetailProps> = ({ works }) => {
     <div>
       <h2>{work.name}</h2>
       <p>{work.description}</p>
+      <p>{work.id}</p>
     </div>
   );
 };

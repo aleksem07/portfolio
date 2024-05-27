@@ -1,16 +1,21 @@
+import styles from "/src/styles/components/testimonial.module.scss";
+import { useTranslation } from "react-i18next";
+
 const Testimonial = () => {
+  const { t } = useTranslation();
+
   return (
-    <section>
-      <h2>Testimonial</h2>
-      <blockquote cite="https://www.huxley.net/bnw/four.html">
-        <p>
-          Words can be like X-rays, if you use them properly—they’ll go through
-          anything. You read and you’re pierced.
-        </p>
-        <footer>
-          —Aldous Huxley, <cite>Brave New World</cite>
-        </footer>
-      </blockquote>
+    <section className={styles.testimonial}>
+      <div className={styles.testimonial__container}>
+        <h2 className={styles.testimonial__title}>{t("testimonial.title")}</h2>
+        <blockquote>
+          <p className={styles.testimonial__desc}>{t("testimonial.desc")}</p>
+          <footer className={styles.testimonial__author}>
+            - {t("testimonial.name")}
+          </footer>
+        </blockquote>
+      </div>
+      <div className={styles.testimonial__quotes}></div>
     </section>
   );
 };

@@ -9,7 +9,7 @@ const MyPhoto = () => {
       <img
         src={my_photo}
         className={styles.my_photo__me}
-        alt={t("photo.dev_alt")}
+        alt={t("dev_photo.dev_alt")}
         width={454}
         height={506}
       />

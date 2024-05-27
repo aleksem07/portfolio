@@ -6,11 +6,18 @@
   color-scheme: light dark;
   color: $color-second-light;
   background-color: $color-second-dark;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: $width-desktop) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 12px;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,10 +28,11 @@
 }
 
 #root {
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   position: relative;
+  @include bcg_noise;
 }
 
 a {
@@ -48,10 +56,6 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-[class*="container"] {
-  padding-inline: 5%;
 }
 
 .button {
@@ -93,4 +97,8 @@ img {
 
 ul {
   list-style: none;
+}
+
+blockquote {
+  margin-inline: 0;
 }

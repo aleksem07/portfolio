@@ -2,15 +2,17 @@
 
 .footer {
   z-index: 1;
-  padding-block: 100px 83px;
+  padding-top: 100px;
   margin-top: auto;
   background-color: $color-footer-bcg;
   display: flex;
   flex-direction: column;
+
+  @include bcg_noise;
 }
 
 .footer__header {
-  margin-bottom: 193px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +37,6 @@
 
 .footer__body {
   @include body_margin;
-  margin-bottom: 36px;
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #949494;
@@ -56,6 +57,7 @@
 }
 
 .right_reserved {
+  margin-block: 36px;
   font-family: $font-second-family;
   font-weight: 700;
   font-size: $fz-24px;

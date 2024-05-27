@@ -1,3 +1,5 @@
+import Works from "../../works/works";
+
 interface Works {
   id: number;
   name: string;
@@ -11,8 +13,9 @@ interface WorksListProps {
 const WorksPage: React.FC<WorksListProps> = ({ works }) => {
   return (
     <div>
+      <Works />
       <h2>My works</h2>
-      <p>Showcase About Works</p>
+      <p>Showcase About Works 1112</p>
       <p>{works[0].name}</p>
     </div>
   );

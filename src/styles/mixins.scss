@@ -19,3 +19,20 @@
     margin-inline: 5%;
   }
 }
+
+@mixin bcg_noise($opacity: 0.09) {
+  position: relative;
+
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/src/assets/background/noise.png") repeat;
+    opacity: $opacity;
+    pointer-events: none;
+  }
+}

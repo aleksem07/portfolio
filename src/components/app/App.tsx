@@ -8,12 +8,13 @@ import WorksPage from "../pages/works-page/works-page.tsx";
 import ContactsPage from "../pages/contacts-page/contacts-page.tsx";
 import Footer from "../footer/footer.tsx";
 import BackgroundBall from "../background-ball.tsx";
-import WORKLIST from "../../common/work-list.ts";
 import WorkDetail from "../pages/works-page/work-detail.tsx";
 import NotFound from "../pages/404.tsx";
 import { useTranslation } from "react-i18next";
+import Projects from "../../common/projects.tsx";
 
 const App: React.FC = () => {
+  const PROJECTS = Projects();
   const { t } = useTranslation();
 
   return (
@@ -24,10 +25,10 @@ const App: React.FC = () => {
       <Routes>
         <Route path={ROUTES.MAIN} element={<MainPage />} />
         <Route path={ROUTES.ABOUT} element={<AboutPage />} />
-        <Route path={ROUTES.WORKS} element={<WorksPage works={WORKLIST} />} />
+        <Route path={ROUTES.WORKS} element={<WorksPage works={PROJECTS} />} />
         <Route
           path={`${ROUTES.WORKS}/:workId`}
-          element={<WorkDetail works={WORKLIST} />}
+          element={<WorkDetail works={PROJECTS} />}
         />
         <Route path={ROUTES.CONTACTS} element={<ContactsPage />} />
         <Route path="*" element={<NotFound />} />
