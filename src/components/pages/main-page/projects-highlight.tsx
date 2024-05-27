@@ -10,7 +10,10 @@ const ProjectsHighlight = () => {
   return (
     <section className={styles.projects}>
       <h2 className={styles.projects__title}>{t("projects.block.title")}</h2>
-      <Link className={`${styles.projects__button} button`} to={ROUTES.WORKS}>
+      <Link
+        className={`${styles.projects__button} button button__transparent`}
+        to={ROUTES.WORKS}
+      >
         {t("buttons.project")}
       </Link>
       <Works />
