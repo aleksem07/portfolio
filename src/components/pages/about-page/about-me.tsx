@@ -1,5 +1,3 @@
-import placeholder from "/src/assets/placeholder-pic.jpg";
-
 const AboutMe = () => {
   return (
     <>
@@ -12,7 +10,7 @@ const AboutMe = () => {
         build a logo without porbolem.
       </p>
       <img
-        src={placeholder}
+        src="/placeholder-pic.jpg"
         className=""
         alt="Developer`s photo"
         width={361}

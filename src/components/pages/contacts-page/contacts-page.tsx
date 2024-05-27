@@ -1,5 +1,4 @@
 import GetInTouchWithMe from "./get-in-touch-with-me";
-import bcgNote from "/src/assets/background/note.png";
 import City from "../../city";
 import Phone from "../../phone";
 import Email from "../../email";
@@ -11,7 +10,7 @@ const ContactsPage = () => {
       <p>For Any Project Knock Us</p>
       <GetInTouchWithMe />
       <img
-        src={bcgNote}
+        src="/note.png"
         className=""
         alt="Developer`s photo"
         width={1148}

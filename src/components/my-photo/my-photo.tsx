@@ -1,4 +1,3 @@
-import my_photo from "/src/assets/me.jpg";
 import styles from "/src/styles/components/my-photo.module.scss";
 import { useTranslation } from "react-i18next";
 
@@ -7,7 +6,7 @@ const MyPhoto = () => {
   return (
     <div className={styles.my_photo}>
       <img
-        src={my_photo}
+        src="/me.jpg"
         className={styles.my_photo__me}
         alt={t("dev_photo.dev_alt")}
         width={454}
