@@ -1,1 +1,13 @@
-@import "/src/styles/+.scss";
+@import "/src/styles/default_variables.scss";
+
+.promo {
+  margin-bottom: 276px;
+  text-align: center;
+}
+
+.promo__title {
+  font-family: $font-second-family;
+  margin-bottom: 93px;
+  font-weight: 700;
+  font-size: $fz-72px;
+}

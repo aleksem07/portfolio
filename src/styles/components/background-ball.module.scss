@@ -1,0 +1,19 @@
+@import "@/styles/animations/background-ball.scss";
+
+.background__ball {
+  position: absolute;
+  right: 10%;
+  transform: translate(-200px, 250px);
+  width: 200px;
+  height: 50px;
+  background-color: $color-second-light;
+  border: 25px solid $color-second-light;
+  box-shadow: 0 0 0px 70px $color-second-light--030;
+  animation: ball 5s forwards infinite;
+  opacity: 0.2;
+  filter: blur(50px);
+
+  @media screen and (max-width: $width-desktop) {
+    right: 5%;
+  }
+}

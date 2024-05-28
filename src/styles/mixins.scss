@@ -11,3 +11,28 @@
     padding-inline: 5%;
   }
 }
+
+@mixin body_margin {
+  margin-inline: 10%;
+
+  @media screen and (max-width: $width-desktop) {
+    margin-inline: 5%;
+  }
+}
+
+@mixin bcg_noise($opacity: 0.09) {
+  position: relative;
+
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/background/noise.png") repeat;
+    opacity: $opacity;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,33 @@
+@import "/src/styles/default_variables.scss";
+
+.get_know_me {
+  @include body_padding;
+  margin-bottom: 290px;
+  display: flex;
+  justify-content: space-between;
+  gap: 58px;
+}
+
+.get_know_me__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.get_know_me__title {
+  margin-bottom: 26px;
+  font-family: $font-second-family;
+  font-weight: 700;
+  font-size: $fz-56px;
+  color: #fff;
+  line-height: 64px;
+}
+
+.get_know_me__text {
+  margin-bottom: 76px;
+  font-size: $fz-18px;
+  line-height: 154%;
+  letter-spacing: 0.06em;
+  color: $color-text-desc;
+}
