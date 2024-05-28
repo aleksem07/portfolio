@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import CONTACTS from "../common/contacts";
+import Link from "next/link";
+import CONTACTS from "@/common/contacts";
 import styles from "/src/styles/components/footer.module.scss";
 
 let email = "";
@@ -14,7 +14,7 @@ const mailFormatted = email.replace(/mailto:([^?]+).*/, "$1");
 
 const Email = () => {
   return (
-    <Link className={styles.email} to={email}>
+    <Link className={styles.email} href={email}>
       {mailFormatted}
     </Link>
   );

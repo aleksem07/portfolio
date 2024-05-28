@@ -1,4 +1,4 @@
-@import "/src/styles/+.scss";
+@import "/src/styles/default_variables.scss";
 
 .testimonial {
   margin-bottom: 119px;
@@ -34,6 +34,6 @@
 .testimonial__quotes {
   width: 199px;
   height: 183px;
-  background: url("/src/assets/background/quotes.svg") no-repeat;
+  background: url("/background/quotes.svg") no-repeat;
   background-size: contain;
 }

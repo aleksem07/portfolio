@@ -1,14 +1,14 @@
 import styles from "/src/styles/components/footer.module.scss";
-import Logo from "../logo/logo";
+import Logo from "@/components/logo/logo";
 import AllRightsReserved from "./all-rights-reserved";
 import Contacts from "./contacts";
-import Phone from "../phone";
-import Email from "../email";
-import City from "../city";
-import { useTranslation } from "react-i18next";
+import Phone from "@/components/phone";
+import Email from "@/components/email";
+import City from "@/components/city";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <footer className={styles.footer}>
       <header className={styles.footer__header}>

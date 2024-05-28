@@ -1,11 +1,10 @@
-@import "/src/styles/+.scss";
-
 .header {
   @include body_padding;
   margin-bottom: 100px;
   padding-block: 48px;
   text-transform: uppercase;
   display: flex;
+  gap: 2%;
   justify-content: space-between;
   align-items: center;
 }

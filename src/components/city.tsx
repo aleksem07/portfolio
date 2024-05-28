@@ -1,7 +1,7 @@
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const City = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return <span>{t("footer.city")}</span>;
 };
 

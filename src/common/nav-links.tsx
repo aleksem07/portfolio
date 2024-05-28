@@ -1,28 +1,28 @@
 import ROUTES from "./routes";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const NavLinks = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   const NAV_LINKS = [
     {
       name: t("navigate.home"),
-      href: ROUTES.MAIN,
+      href: `${ROUTES.MAIN}`,
       active: true,
     },
     {
       name: t("navigate.about"),
-      href: ROUTES.ABOUT,
+      href: `${ROUTES.ABOUT}`,
       active: false,
     },
     {
       name: t("navigate.works"),
-      href: ROUTES.WORKS,
+      href: `${ROUTES.WORKS}`,
       active: false,
     },
     {
       name: t("navigate.contacts"),
-      href: ROUTES.CONTACTS,
+      href: `${ROUTES.CONTACTS}`,
       active: false,
     },
   ];

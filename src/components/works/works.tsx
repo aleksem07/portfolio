@@ -1,7 +1,8 @@
-import styles from "/src/styles/components/project-higlight.module.scss";
-import Projects from "../../common/projects";
-import { Link } from "react-router-dom";
-import ROUTES from "../../common/routes";
+import styles from "/src/styles/components/project-highlight.module.scss";
+import Projects from "@/common/projects";
+import Link from "next/link";
+import ROUTES from "@/common/routes";
+import Image from "next/image";
 
 const Works = () => {
   const PROJECTS = Projects();
@@ -10,8 +11,8 @@ const Works = () => {
       {PROJECTS.map(project => {
         return (
           <li key={project.id}>
-            <Link to={`${ROUTES.WORKS}/${project.id}`}>
-              <img
+            <Link href={`${ROUTES.WORKS}/${project.id}`}>
+              <Image
                 src={project.image}
                 className=""
                 alt={`${project.alt} ${project.title}`}

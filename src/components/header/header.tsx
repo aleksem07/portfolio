@@ -1,15 +1,22 @@
-import styles from "/src/styles/components/header.module.scss";
-import { Link } from "react-router-dom";
+"use client";
+import styles from "@/styles/components/header.module.scss";
 import Logo from "../logo/logo";
-import ChooseLanguage from "../choose-language";
-import NavLinks from "../../common/nav-links";
+import ChooseLang from "../choose-lang";
+import NavLinks from "@/common/nav-links";
+import { useRouter } from "next/navigation";
 
 const Header: React.FC = () => {
   const NAV_LINKS = NavLinks();
+  const router = useRouter();
+
+  const handleChange = (href: string) => {
+    router.push(`${href}`);
+  };
+
   return (
     <header className={styles.header}>
       <Logo />
-      <ChooseLanguage />
+      <ChooseLang />
       <nav
         className={`${styles.header_nav} ${styles.nav}`}
         role="navigation"
@@ -18,12 +25,12 @@ const Header: React.FC = () => {
         <ul className={styles.nav_list}>
           {NAV_LINKS.map(link => (
             <li className={`${styles.nav_item}`} key={link.name}>
-              <Link
+              <button
+                onClick={() => handleChange(link.href)}
                 className={`${link.active ? styles.nav_item_active : ""}`}
-                to={link.href}
               >
                 {link.name}
-              </Link>
+              </button>
             </li>
           ))}
         </ul>

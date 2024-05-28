@@ -1,11 +1,12 @@
 import styles from "/src/styles/components/my-photo.module.scss";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const MyPhoto = () => {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <div className={styles.my_photo}>
-      <img
+      <Image
         src="/me.jpg"
         className={styles.my_photo__me}
         alt={t("dev_photo.dev_alt")}
