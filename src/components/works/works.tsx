@@ -3,27 +3,51 @@ import Projects from "@/common/projects";
 import Link from "next/link";
 import ROUTES from "@/common/routes";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import React from "react";
 
-const Works = () => {
-  const PROJECTS = Projects();
+interface IWorks {
+  isMainPage?: boolean;
+  projectCount?: number;
+}
+
+const Works: React.FC<IWorks> = ({ isMainPage = false, projectCount = 4 }) => {
+  const t = useTranslations();
+  let PROJECTS = Projects();
+  isMainPage ? (PROJECTS = PROJECTS.slice(0, projectCount)) : PROJECTS;
   return (
     <ul className={styles.projects__container}>
       {PROJECTS.map(project => {
         return (
-          <li key={project.id}>
-            <Link href={`${ROUTES.WORKS}/${project.id}`}>
+          <li className={styles.projects__item} key={project.id}>
+            <Link
+              className={styles.projects__link}
+              href={`${ROUTES.WORKS}/${project.pageName}`}
+            >
               <Image
                 src={project.image}
-                className=""
+                className={styles.projects__image}
                 alt={`${project.alt} ${project.title}`}
-                width={260}
-                height={368}
+                width={560}
+                height={620}
               />
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <ul>
-                <li>stack</li>
-              </ul>
+              <h3 className={styles.projects__item_title}>{project.title}</h3>
+              <h5 className={styles.projects__item_desc}>
+                <span>
+                  {t("projects.block.description")}:{"\u00A0"}
+                </span>
+                {project.description}
+              </h5>
+              <div className={styles.projects__stack_container}>
+                <h5 className={styles.projects__item_desc}>
+                  <span>
+                    {t("projects.block.stack")}:{"\u00A0"}
+                  </span>
+                </h5>
+                <ul>
+                  <li>stack</li>
+                </ul>
+              </div>
             </Link>
           </li>
         );

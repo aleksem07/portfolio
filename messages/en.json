@@ -37,16 +37,18 @@
 
   "projects": {
     "block": {
-      "title": "My Projects Highlight"
+      "title": "My Projects Highlight",
+      "description": "Description",
+      "stack": "Stack"
     },
-    "project1": {
-      "title": "Project 1232",
+    "nail-salon": {
+      "title": "Nail service studio",
       "alt": "project cover:",
       "description": "Project 1 description"
     },
-    "project2": {
-      "title": "Project 2",
-      "alt": "project cover:",
+    "on-shelves": {
+      "title": "On shelves",
+      "alt": "project cover: On shelves",
       "description": "Project 2 description"
     }
   },

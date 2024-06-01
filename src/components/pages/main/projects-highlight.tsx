@@ -16,7 +16,7 @@ const ProjectsHighlight = () => {
       >
         {t("buttons.project")}
       </Link>
-      <Works />
+      <Works isMainPage={true} />
     </section>
   );
 };
