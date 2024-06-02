@@ -53,6 +53,21 @@
     }
   },
 
+  "page": {
+    "title": {
+      "project-detail": "Project Detail",
+      "about": "About Me",
+      "works": "My works",
+      "contacts": "Contact Me"
+    },
+    "desc": {
+      "project-detail": "Details About The Porject",
+      "about": "Little Brief About Myself",
+      "works": "Showcase About Works",
+      "contacts": "For Any Project Knock Us"
+    }
+  },
+
   "testimonial": {
     "title": "Testimonials",
     "desc": "“Alexey was fantastic to work with from start to finish. We were looking for an outstanding site and it delivered. I tried to develop a website myself, thinking that I would not have to pay money to professional developers, but I was very mistaken. Working with Alexey was worth every penny and was surprisingly affordable! I can't thank Alexey enough for his efforts and professionalism. I would recommend him to anyone looking for a site!”",

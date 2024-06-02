@@ -7,16 +7,21 @@ import { useTranslations } from "next-intl";
 import React from "react";
 
 interface IWorks {
+  className?: string;
   isMainPage?: boolean;
   projectCount?: number;
 }
 
-const Works: React.FC<IWorks> = ({ isMainPage = false, projectCount = 4 }) => {
+const Works: React.FC<IWorks> = ({
+  className,
+  isMainPage = false,
+  projectCount = 4,
+}) => {
   const t = useTranslations();
   let PROJECTS = Projects();
   isMainPage ? (PROJECTS = PROJECTS.slice(0, projectCount)) : PROJECTS;
   return (
-    <ul className={styles.projects__container}>
+    <ul className={`${styles.projects__container} ${className || ""}`}>
       {PROJECTS.map(project => {
         return (
           <li className={styles.projects__item} key={project.id}>

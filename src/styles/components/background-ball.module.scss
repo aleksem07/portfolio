@@ -1,8 +1,11 @@
 @import "@/styles/animations/background-ball.scss";
 
+section:has(.background__ball) {
+  position: relative;
+}
+
 .background__ball {
   position: absolute;
-  right: 10%;
   transform: translate(-200px, 250px);
   width: 200px;
   height: 50px;

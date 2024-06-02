@@ -53,6 +53,21 @@
     }
   },
 
+  "page": {
+    "title": {
+      "project-detail": "Детали проекта",
+      "about": "Обо мне",
+      "works": "Мои работы",
+      "contacts": "Контакты"
+    },
+    "desc": {
+      "project-detail": "Подробности о проекте",
+      "about": "Немного о себе",
+      "works": "Список работ",
+      "contacts": "Для сотрудничества свяжитесь со мной"
+    }
+  },
+
   "testimonial": {
     "title": "Отзывы",
     "desc": "“Alexey was fantastic to work with from start to finish. We were looking for an outstanding site and it delivered. I tried to develop a website myself, thinking that I would not have to pay money to professional developers, but I was very mistaken. Working with Alexey was worth every penny and was surprisingly affordable! I can't thank Alexey enough for his efforts and professionalism. I would recommend him to anyone looking for a site!”",
