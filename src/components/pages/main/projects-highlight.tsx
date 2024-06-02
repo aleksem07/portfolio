@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ROUTES from "@/common/routes";
 import styles from "/src/styles/components/project-highlight.module.scss";
-import Works from "@/components/works/works";
+import Works from "@/components/works-list/works-list";
 import { useTranslations } from "next-intl";
 import BackgroundBall from "@/components/background-ball";
 

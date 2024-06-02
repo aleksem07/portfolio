@@ -9,9 +9,12 @@ const Header: React.FC = () => {
   const NAV_LINKS = NavLinks();
   const router = useRouter();
   const pathname = usePathname();
-  const pathnameFiltered = pathname
-    .replace(/^\/[a-z]{2}(\/|$)/, "/")
-    .toLowerCase();
+  const pathnameFiltered = `/${
+    pathname
+      .replace(/^\/[a-z]{2}(\/|$)/, "/")
+      .toLowerCase()
+      .split("/")[1]
+  }`;
 
   const handleChange = (href: string) => {
     router.push(`${href}`);

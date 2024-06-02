@@ -12,7 +12,7 @@ interface IWorks {
   projectCount?: number;
 }
 
-const Works: React.FC<IWorks> = ({
+const WorksList: React.FC<IWorks> = ({
   className,
   isMainPage = false,
   projectCount = 4,
@@ -61,4 +61,4 @@ const Works: React.FC<IWorks> = ({
   );
 };
 
-export default Works;
+export default WorksList;

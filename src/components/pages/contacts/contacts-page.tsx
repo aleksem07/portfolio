@@ -1,14 +1,13 @@
 import GetInTouchWithMe from "./get-in-touch-with-me";
-import City from "../../city";
-import Phone from "../../phone";
-import Email from "../../email";
+import City from "@/components/city";
+import Phone from "@/components/phone";
+import Email from "@/components/email";
 import Image from "next/image";
+import styles from "@/styles/components/contacts-page.module.scss";
 
 const ContactsPage = () => {
   return (
-    <div>
-      <h2>Contact Me</h2>
-      <p>For Any Project Knock Us</p>
+    <section className={styles.contacts}>
       <GetInTouchWithMe />
       <Image
         src="/note.png"
@@ -20,7 +19,7 @@ const ContactsPage = () => {
       <City />
       <Phone />
       <Email />
-    </div>
+    </section>
   );
 };
 

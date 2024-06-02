@@ -1,23 +1,11 @@
-import Works from "@/components/works/works";
+import styles from "@/styles/components/works.module.scss";
+import WorksList from "@/components/works-list/works-list";
 
-interface Works {
-  id: number;
-  name: string;
-  description: string;
-}
-
-interface WorksListProps {
-  works: Works[];
-}
-
-const WorksPage: React.FC<WorksListProps> = ({ works }) => {
+const WorksPage = () => {
   return (
-    <div>
-      <Works />
-      <h2>My works</h2>
-      <p>Showcase About Works 1112</p>
-      <p>{works[0].name}</p>
-    </div>
+    <section>
+      <WorksList className={styles.works} />
+    </section>
   );
 };
 
