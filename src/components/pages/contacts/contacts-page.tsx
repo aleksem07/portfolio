@@ -13,12 +13,12 @@ const ContactsPage = () => {
       <ParallaxComponent
         img="/note.png"
         speed={20}
-        className="h-[300px] mb-24"
+        className="h-[150px] mb-24"
       />
       <div className={styles.contacts__container}>
-        <City />
         <Phone />
         <Email />
+        <City />
       </div>
       <Contacts className="justify-center" classIcon="w-[40px] h-[40px]" />
     </section>

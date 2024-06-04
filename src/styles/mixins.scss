@@ -36,3 +36,24 @@
     pointer-events: none;
   }
 }
+
+@mixin nav_hover-active {
+  & li:has(:not(.nav_item_active)) {
+    &:hover,
+    &:active {
+      outline: 5px solid $color-second-light--030;
+      outline-offset: -5px;
+      background-color: $color-grayscale-dark;
+      color: $color-second-light;
+      border-radius: 30px;
+    }
+  }
+
+  // & li:has(.nav_item_active) {
+
+  // }
+}
+
+@mixin transition_button {
+  transition: 0.3s ease;
+}

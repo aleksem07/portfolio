@@ -1,6 +1,7 @@
 "use client";
 import styles from "@/styles/components/get-in-touch-with-me.module.scss";
 import { useState, ChangeEvent, FormEvent } from "react";
+import { useTranslations } from "next-intl";
 
 const GetInTouchWithMe = () => {
   const [formData, setFormData] = useState({
@@ -24,14 +25,16 @@ const GetInTouchWithMe = () => {
     window.location.href = mailtoLink;
   };
 
+  const t = useTranslations("contacts");
+
   return (
     <section className={styles.getintouchwithme}>
-      <h2 className={styles.getintouchwithme_title}>Get in Touch With Me</h2>
+      <h2 className={styles.getintouchwithme_title}>{t("title")}</h2>
       <form
         className={`${styles.getintouchwithme_form} ${styles.form}`}
         onSubmit={handleSubmit}
       >
-        <label htmlFor="name">name:</label>
+        <label htmlFor="name">{t("form.name")}:</label>
         <input
           type="text"
           id="name"
@@ -39,7 +42,7 @@ const GetInTouchWithMe = () => {
           value={formData.name}
           onChange={handleChange}
         />
-        <label htmlFor="subject">subject:</label>
+        <label htmlFor="subject">{t("form.subject")}:</label>
         <input
           type="text"
           id="subject"
@@ -47,7 +50,7 @@ const GetInTouchWithMe = () => {
           value={formData.subject}
           onChange={handleChange}
         />
-        <label htmlFor="message">message:</label>
+        <label htmlFor="message">{t("form.message")}:</label>
         <input
           type="text"
           id="message"
@@ -59,7 +62,7 @@ const GetInTouchWithMe = () => {
           className={`button ${styles.getintouchwithme_button}`}
           type="submit"
         >
-          Send
+          {t("form.send")}
         </button>
       </form>
     </section>

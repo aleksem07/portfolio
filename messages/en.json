@@ -78,5 +78,15 @@
     "title": "Get in Touch With Us",
     "city": "Belgorod",
     "rights": "All Rights Reserved"
+  },
+
+  "contacts": {
+    "title": "Get in Touch With Me",
+    "form": {
+      "name": "name",
+      "subject": "subject",
+      "message": "message",
+      "send": "send email"
+    }
   }
 }

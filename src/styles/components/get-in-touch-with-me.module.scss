@@ -37,10 +37,10 @@
   }
 
   & > .getintouchwithme_button {
-    padding-block: 11px;
+    padding-block: 15px;
     font-size: $fz-24px;
     font-weight: 500;
     border-radius: 50px;
-    max-width: 158px;
+    max-width: max-content;
   }
 }
