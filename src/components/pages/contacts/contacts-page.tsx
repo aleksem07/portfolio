@@ -11,8 +11,8 @@ const ContactsPage = () => {
       <GetInTouchWithMe />
       <Image
         src="/note.png"
-        className=""
-        alt="Developer`s photo"
+        className={styles.contacts_img}
+        alt=""
         width={1148}
         height={636}
       />

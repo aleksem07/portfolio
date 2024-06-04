@@ -1,5 +1,5 @@
 "use client";
-
+import styles from "@/styles/components/get-in-touch-with-me.module.scss";
 import { useState, ChangeEvent, FormEvent } from "react";
 
 const GetInTouchWithMe = () => {
@@ -25,9 +25,12 @@ const GetInTouchWithMe = () => {
   };
 
   return (
-    <>
-      <h2>Get in Touch With Us</h2>
-      <form onSubmit={handleSubmit}>
+    <section className={styles.getintouchwithme}>
+      <h2 className={styles.getintouchwithme_title}>Get in Touch With Me</h2>
+      <form
+        className={`${styles.getintouchwithme_form} ${styles.form}`}
+        onSubmit={handleSubmit}
+      >
         <label htmlFor="name">name:</label>
         <input
           type="text"
@@ -52,9 +55,14 @@ const GetInTouchWithMe = () => {
           value={formData.message}
           onChange={handleChange}
         />
-        <input type="submit" value="send" />
+        <button
+          className={`button ${styles.getintouchwithme_button}`}
+          type="submit"
+        >
+          Send
+        </button>
       </form>
-    </>
+    </section>
   );
 };
 
