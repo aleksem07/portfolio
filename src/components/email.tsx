@@ -1,6 +1,7 @@
 import Link from "next/link";
 import CONTACTS from "@/common/contacts";
-import styles from "/src/styles/components/footer.module.scss";
+import styles from "/src/styles/components/email.module.scss";
+import React from "react";
 
 let email = "";
 
@@ -9,12 +10,15 @@ CONTACTS.forEach(contact => {
     return (email = contact.link);
   }
 });
-
 const mailFormatted = email.replace(/mailto:([^?]+).*/, "$1");
 
-const Email = () => {
+interface IEmailProps {
+  className?: string;
+}
+
+const Email: React.FC<IEmailProps> = ({ className }) => {
   return (
-    <Link className={styles.email} href={email}>
+    <Link className={`${styles.email} ${className || ""}`} href={email}>
       {mailFormatted}
     </Link>
   );

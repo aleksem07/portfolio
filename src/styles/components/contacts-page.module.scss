@@ -1,7 +1,16 @@
 .contacts {
   @include body_padding;
+  margin-bottom: 164px;
 }
 
 .contacts_img {
   width: 100%;
+}
+
+.contacts__container {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
