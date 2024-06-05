@@ -1,0 +1,26 @@
+.teaching {
+  margin-bottom: 200px;
+  outline-offset: -5px;
+}
+
+.teaching__title {
+  font-family: $font-second-family;
+  font-weight: 700;
+  font-size: $fz-48px;
+  line-height: 167%;
+  letter-spacing: -0.01em;
+}
+
+.teaching__list {
+  display: flex;
+  gap: 2%;
+}
+
+.teaching__item {
+  font-family: $font-inter;
+  font-weight: 700;
+  font-size: $fz-32px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: $color-text-dark-light;
+}

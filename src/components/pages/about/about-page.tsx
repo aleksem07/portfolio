@@ -1,7 +1,6 @@
 import AboutMe from "./about-me";
-import FollowMe from "./follow-me";
 import Teaching from "./teaching";
-import TitlePage from "@/app/title-page";
+import MyStack from "./my-stack";
 
 import styles from "@/styles/components/about-page.module.scss";
 
@@ -9,8 +8,8 @@ const AboutPage = () => {
   return (
     <section className={styles.about_page}>
       <AboutMe />
+      <MyStack />
       <Teaching />
-      <FollowMe />
     </section>
   );
 };
