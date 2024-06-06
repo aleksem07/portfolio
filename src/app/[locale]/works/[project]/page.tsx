@@ -1,3 +1,4 @@
+"use client";
 import Projects from "@/common/projects";
 import BackgroundBall from "@/components/background-ball";
 import TitlePage from "@/app/title-page";
@@ -5,20 +6,31 @@ import styles from "@/styles/components/project-detail.module.scss";
 import NotFound from "@/app/not-found";
 import OtherProjects from "@/components/other-projects";
 
-const project = () => {
+import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+
+const Project: React.FC = () => {
   const PROJECTS = Projects();
-  const onShelvesProject = PROJECTS.find(
-    project => project.pageName === "on-shelves"
+  const [selectedProject, setSelectedProject] = useState("");
+  const currenProject = PROJECTS.find(
+    project => project.pageName === selectedProject
   );
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const projectName = pathname.split("/")[3];
+    setSelectedProject(projectName);
+  }, [pathname]);
 
   return (
     <>
       <TitlePage title={"Project Detail"} desc={"Details About The Project"} />
 
-      {onShelvesProject ? (
+      {currenProject ? (
         <section className={styles.project_detail}>
-          {onShelvesProject.title} {onShelvesProject.alt}
-          {onShelvesProject.description}
+          {currenProject.title} {currenProject.alt}
+          {currenProject.description}
         </section>
       ) : (
         <NotFound />
@@ -30,4 +42,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;

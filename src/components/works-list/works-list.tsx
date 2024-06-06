@@ -1,11 +1,10 @@
-"use client";
 import styles from "/src/styles/components/project-highlight.module.scss";
 import Projects from "@/common/projects";
 import Link from "next/link";
 import ROUTES from "@/common/routes";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import React, { useState } from "react";
+import React from "react";
 
 interface IWorks {
   className?: string;
@@ -20,7 +19,6 @@ const WorksList: React.FC<IWorks> = ({
 }) => {
   const t = useTranslations();
   let PROJECTS = Projects();
-  const [selectedProject, setSelectedProject] = useState("");
 
   isMainPage ? (PROJECTS = PROJECTS.slice(0, projectCount)) : PROJECTS;
 
@@ -30,7 +28,6 @@ const WorksList: React.FC<IWorks> = ({
         return (
           <li className={styles.projects__item} key={project.id}>
             <Link
-              onClick={() => setSelectedProject(project.pageName)}
               className={styles.projects__link}
               href={`${ROUTES.WORKS}/${project.pageName}`}
             >
