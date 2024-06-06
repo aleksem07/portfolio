@@ -28,7 +28,7 @@ const Projects = () => {
       title: t("on-shelves.title"),
       alt: t("on-shelves.alt"),
       description: t("on-shelves.description"),
-      image: "/projects/graphiql1.png",
+      image: "/projects/graphiql.png",
       stack: "React",
       pageName: "graphiql",
     },

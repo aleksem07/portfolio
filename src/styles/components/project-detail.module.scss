@@ -1,4 +1,26 @@
 .project_detail {
   @include body_padding;
   margin-bottom: 193px;
+  display: flex;
+  gap: 5%;
+}
+
+.project_detail__image {
+  max-height: 50vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.project_detail__title {
+  margin-bottom: 30px;
+  font-family: $font-second-family;
+  font-weight: 700;
+  font-size: $fz-32px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+.project_detail__desc {
+  line-height: 170%;
+  color: $color-grayscale-light--80;
 }
