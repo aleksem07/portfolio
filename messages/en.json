@@ -88,5 +88,26 @@
       "message": "message",
       "send": "send email"
     }
+  },
+
+  "about-page": {
+    "about": {
+      "title": "My mission is to make a website so that you are satisfied.",
+      "desc": "234"
+    },
+    "title-tools": "Languages and Tools",
+    "title-courses": "Courses and advanced training",
+    "language": "Language",
+    "details": "Details",
+    "courses": {
+      "html-academy": {
+        "frontend": "Preparation for the profession, HTML and CSS. Professional website layout, HTML and CSS. Adaptive layout and automation, JavaScript. Professional development of web interfaces, Preparation of layout for content management systems (CMS), Layout of React components, Grading",
+        "scoring": "Skills are assessed in the format of completing test tasks with automatic checks. The tasks used were tasks of easy and medium difficulty level of the Olympiad on frontend for Yandex."
+      },
+      "rs-school": {
+        "frontend": "Throughout the training, mock interviews are conducted with different mentors. The program consists of 3 stages. There may be requirements for advancing to each higher stage. Stage 1 - Git HTML CSS Javascript basics, Stage 2 - Advanced Javascript, Security, Testing, Agile, Networking, web development tools, Stage 3 - Collaborative development of a final project.",
+        "react": "RS School students who have completed RS School Stage #2 and new students with strong CoreJS/TS/Frontend skills: JavaScript TypeScript Git, GitHub (clone, add, commit, push, pull, merge, rebase, working with Pull Request) NPM, Webpack CSS3 / HTML5 Chrome DevTools, Figma Understanding of the REST"
+      }
+    }
   }
 }

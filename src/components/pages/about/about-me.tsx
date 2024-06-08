@@ -1,26 +1,20 @@
-// import Image from "next/image";
 import styles from "@/styles/components/about-me.module.scss";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const AboutMe = () => {
+  const t = useTranslations("about-page");
+
   return (
     <section className={styles.about_me}>
-      <h2 className={styles.about_me__title}>
-        My mission is to make design easier.
-      </h2>
-      <p className={styles.about_me__desc}>
-        Create custom Designs with AARONN that converts more visitors than any
-        website. With lots of unique design, you can easily select a logo
-        without hassle. Create custom landing logos with AARONN that converts
-        more visitors than any website. With lots of revisions, you can easily
-        build a logo without porbolem.
-      </p>
-      {/* <Image
-        src="/placeholder-pic.jpg"
-        className={styles.about_me__img}
-        alt="Developer`s photo"
-        width={361}
-        height={415}
-      /> */}
+      <h2 className={styles.about_me__title}>{t("about.title")}</h2>
+      <Image
+        className={styles.about_me__image}
+        src="/me2.jpg"
+        alt="my photo"
+        width={500}
+        height={500}
+      />
     </section>
   );
 };

@@ -16,18 +16,6 @@
   letter-spacing: -0.03em;
 }
 
-.about_me__desc {
-  font-family: $font-open-sans;
-  font-weight: 600;
-  font-size: $fz-20px;
-  line-height: 186%;
-  letter-spacing: -0.03em;
-  color: $color-text-dark-light;
-}
-
-.about_me__img {
-  margin: auto;
-  max-width: 361px;
-  height: auto;
-  grid-column: 1 / -1;
+.about_me__image {
+  filter: contrast(1.35) brightness(85%);
 }
