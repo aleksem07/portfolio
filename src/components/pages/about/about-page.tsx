@@ -1,5 +1,5 @@
 import AboutMe from "./about-me";
-import Teaching from "./teaching";
+import Courses from "./courses";
 import MyStack from "./my-stack";
 
 import styles from "@/styles/components/about-page.module.scss";
@@ -9,7 +9,7 @@ const AboutPage = () => {
     <section className={styles.about_page}>
       <AboutMe />
       <MyStack />
-      <Teaching />
+      <Courses />
     </section>
   );
 };
