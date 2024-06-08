@@ -12,7 +12,7 @@
   background-color: $color-brand;
   border-radius: 32px;
   box-shadow: 0 32px 54px 0 rgba(3, 3, 3, 0.14);
-  transition: all 0.3s ease;
+  @include transition_button;
 
   &:hover {
     color: $color-text-button--hover;

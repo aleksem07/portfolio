@@ -1,0 +1,19 @@
+.my_stack {
+}
+
+.my_stack__title {
+  margin-bottom: 25px;
+  font-family: $font-second-family;
+  font-weight: 700;
+  font-size: $fz-48px;
+  line-height: 167%;
+  letter-spacing: -0.01em;
+}
+
+.my_stack__list {
+  margin-bottom: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}

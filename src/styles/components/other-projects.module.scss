@@ -1,0 +1,12 @@
+.other_projects {
+  @include body_padding;
+  margin-bottom: 50px;
+}
+
+.other_projects__title {
+  margin-bottom: 85px;
+  font-family: $fz-64px;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}

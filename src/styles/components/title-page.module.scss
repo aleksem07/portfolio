@@ -1,0 +1,19 @@
+.title_page {
+  @include body_margin;
+  border-bottom: 1px solid $color-text-dark-light;
+  margin-bottom: 101px;
+}
+
+.title_page__title {
+  margin-bottom: 10px;
+  font-family: $font-second-family;
+  font-weight: 700;
+  font-size: $fz-72px;
+}
+
+.title_page__desc {
+  padding-bottom: 91px;
+  font-weight: 500;
+  font-size: $fz-18px;
+  color: $color-text-dark-light;
+}

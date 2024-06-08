@@ -1,26 +1,27 @@
 import GetInTouchWithMe from "./get-in-touch-with-me";
-import City from "../../city";
-import Phone from "../../phone";
-import Email from "../../email";
-import Image from "next/image";
+import City from "@/components/city";
+import Phone from "@/components/phone";
+import Email from "@/components/email";
+import Contacts from "@/components/footer/contacts";
+import styles from "@/styles/components/contacts-page.module.scss";
+import ParallaxComponent from "@/app/parallax";
 
 const ContactsPage = () => {
   return (
-    <div>
-      <h2>Contact Me</h2>
-      <p>For Any Project Knock Us</p>
+    <section className={styles.contacts}>
       <GetInTouchWithMe />
-      <Image
-        src="/note.png"
-        className=""
-        alt="Developer`s photo"
-        width={1148}
-        height={636}
+      <ParallaxComponent
+        img="/note.png"
+        speed={20}
+        className="h-[150px] mb-24"
       />
-      <City />
-      <Phone />
-      <Email />
-    </div>
+      <div className={styles.contacts__container}>
+        <Phone />
+        <Email />
+        <City />
+      </div>
+      <Contacts className="justify-center" classIcon="w-[40px] h-[40px]" />
+    </section>
   );
 };
 

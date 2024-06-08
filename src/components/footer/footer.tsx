@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <header className={styles.footer__header}>
         <h4 className={styles.footer__title}>{t("footer.title")}</h4>
-        <Email />
+        <Email className={styles.email} />
       </header>
       <div className={styles.footer__body}>
         <Logo />

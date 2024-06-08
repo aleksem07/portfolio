@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <>
       <h1 className="visually_hidden">{t("h1")}</h1>
-      <BackgroundBall />
+      <BackgroundBall right={"5%"} />
       <MainPage />
     </>
   );

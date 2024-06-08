@@ -37,17 +37,34 @@
 
   "projects": {
     "block": {
-      "title": "My Projects Highlight"
+      "title": "My Projects Highlight",
+      "description": "Description",
+      "stack": "Stack"
     },
-    "project1": {
-      "title": "Project 1232",
+    "nail-salon": {
+      "title": "Nail service studio",
       "alt": "project cover:",
       "description": "Project 1 description"
     },
-    "project2": {
-      "title": "Project 2",
-      "alt": "project cover:",
+    "on-shelves": {
+      "title": "On shelves",
+      "alt": "project cover: On shelves",
       "description": "Project 2 description"
+    }
+  },
+
+  "page": {
+    "title": {
+      "project-detail": "Project Detail",
+      "about": "About Me",
+      "works": "My works",
+      "contacts": "Contact Me"
+    },
+    "desc": {
+      "project-detail": "Details About The Porject",
+      "about": "Little Brief About Myself",
+      "works": "Showcase About Works",
+      "contacts": "For Any Project Knock Us"
     }
   },
 
@@ -61,5 +78,15 @@
     "title": "Get in Touch With Us",
     "city": "Belgorod",
     "rights": "All Rights Reserved"
+  },
+
+  "contacts": {
+    "title": "Get in Touch With Me",
+    "form": {
+      "name": "name",
+      "subject": "subject",
+      "message": "message",
+      "send": "send email"
+    }
   }
 }

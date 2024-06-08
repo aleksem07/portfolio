@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-family, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   height: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -73,10 +78,6 @@ ul {
   padding: 0;
 }
 
-img {
-  object-fit: cover;
-}
-
 ul {
   list-style: none;
 }
@@ -89,4 +90,8 @@ blockquote {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+img {
+  background-color: $color-grayscale-dark--60;
 }

@@ -3,11 +3,18 @@ import styles from "@/styles/components/header.module.scss";
 import Logo from "../logo/logo";
 import ChooseLang from "../choose-lang";
 import NavLinks from "@/common/nav-links";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const Header: React.FC = () => {
   const NAV_LINKS = NavLinks();
   const router = useRouter();
+  const pathname = usePathname();
+  const pathnameFiltered = `/${
+    pathname
+      .replace(/^\/[a-z]{2}(\/|$)/, "/")
+      .toLowerCase()
+      .split("/")[1]
+  }`;
 
   const handleChange = (href: string) => {
     router.push(`${href}`);
@@ -27,7 +34,9 @@ const Header: React.FC = () => {
             <li className={`${styles.nav_item}`} key={link.name}>
               <button
                 onClick={() => handleChange(link.href)}
-                className={`${link.active ? styles.nav_item_active : ""}`}
+                className={`${
+                  pathnameFiltered === link.href ? styles.nav_item_active : ""
+                }`}
               >
                 {link.name}
               </button>

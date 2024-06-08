@@ -25,10 +25,10 @@
   color: $color-brand;
 }
 
-.email {
+.footer__header > .email {
+  font-size: $fz-64px;
   font-family: $font-second-family;
   font-weight: 700;
-  font-size: $fz-64px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }

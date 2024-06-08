@@ -1,0 +1,43 @@
+.works {
+  display: grid;
+  gap: 1.5%;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(6, minmax(15%, 1fr));
+  @include body_padding;
+
+  & img {
+    height: 347px;
+    object-fit: cover;
+  }
+
+  & > :nth-child(5n + 1),
+  & > :nth-child(5n + 2),
+  & > :nth-child(5n + 3) {
+    max-width: 361px;
+    grid-column: span 2;
+  }
+
+  & > :nth-child(5n + 4),
+  & > :nth-child(5n + 5) {
+    max-width: 555px;
+    grid-column: span 3;
+  }
+
+  & h5,
+  & div {
+    display: none;
+  }
+
+  & h3 {
+    font-family: $font-inter;
+    text-align: center;
+    line-height: 142%;
+    letter-spacing: -0.02em;
+
+    &::after {
+      width: 0;
+      height: 0;
+    }
+  }
+}

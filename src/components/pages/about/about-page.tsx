@@ -1,17 +1,15 @@
 import AboutMe from "./about-me";
-import FollowMe from "./follow-me";
-import Teaching from "./teaching";
+import Courses from "./courses";
+import MyStack from "./my-stack";
+
+import styles from "@/styles/components/about-page.module.scss";
 
 const AboutPage = () => {
   return (
-    <section>
-      <div>
-        <h2>About Me</h2>
-        <p>Little Brief About Myself</p>
-      </div>
+    <section className={styles.about_page}>
       <AboutMe />
-      <Teaching />
-      <FollowMe />
+      <MyStack />
+      <Courses />
     </section>
   );
 };

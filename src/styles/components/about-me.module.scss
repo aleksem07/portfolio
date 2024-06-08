@@ -1,0 +1,33 @@
+.about_me {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  row-gap: 100px;
+  column-gap: 35px;
+  align-items: center;
+}
+
+.about_me__title {
+  ont-family: $font-second-family;
+  font-weight: 700;
+  font-size: $fz-80px;
+  line-height: 105%;
+  letter-spacing: -0.03em;
+}
+
+.about_me__desc {
+  font-family: $font-open-sans;
+  font-weight: 600;
+  font-size: $fz-20px;
+  line-height: 186%;
+  letter-spacing: -0.03em;
+  color: $color-text-dark-light;
+}
+
+.about_me__img {
+  margin: auto;
+  max-width: 361px;
+  height: auto;
+  grid-column: 1 / -1;
+}

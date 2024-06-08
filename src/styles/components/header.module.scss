@@ -12,12 +12,13 @@
 .nav_list {
   flex: 1;
   display: flex;
-  gap: 46px;
+  gap: 1.5%;
   align-items: center;
 }
 
 .nav_list {
   @include list_default;
+  @include nav_hover-active;
 }
 
 .nav_item {
@@ -27,16 +28,25 @@
   font-size: $fz-14px;
   line-height: 17px;
   opacity: 0.5;
+  @include transition_button;
 
   &:has(.nav_item_active) {
     opacity: 1;
   }
 
   &_active {
-    padding: 15px 36px;
     border: 2px solid $color-second-light--030;
     border-radius: 30px;
     background-color: $color-grayscale-dark;
     color: $color-second-light;
+    cursor: default;
+    box-shadow: 1px 1px 2px 0 white;
+  }
+
+  & button {
+    min-width: max-content;
+    text-transform: uppercase;
+    padding: 15px 36px;
+    border-radius: 30px;
   }
 }
