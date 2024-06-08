@@ -1,11 +1,13 @@
 import STACK from "@/common/stack";
 import Image from "next/image";
 import styles from "@/styles/components/my-stack.module.scss";
+import { useTranslations } from "next-intl";
 
 const MyStack = () => {
+  const t = useTranslations("about-page");
   return (
     <section className={styles.my_stack}>
-      <h3 className={styles.my_stack__title}>Languages and Tools:</h3>
+      <h3 className={styles.my_stack__title}>{t("title-tools")}:</h3>
       <ul className={styles.my_stack__list}>
         {STACK.map(({ name, id, image }) => (
           <li key={id}>

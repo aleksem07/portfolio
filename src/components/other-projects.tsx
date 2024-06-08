@@ -5,7 +5,7 @@ const OtherProjects = () => {
   return (
     <div className={styles.other_projects}>
       <h3 className={styles.other_projects__title}>Other Projects</h3>
-      <WorksList isMainPage className="flex" />
+      <WorksList isMainPage className="flex" projectCount={3} />
     </div>
   );
 };

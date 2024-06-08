@@ -15,7 +15,7 @@ const STACK = [
   },
   {
     id: uuidv4(),
-    name: "redux",
+    name: "Redux",
     image: "/stack/redux.svg",
     http: "",
   },
@@ -51,6 +51,12 @@ const STACK = [
   },
   {
     id: uuidv4(),
+    name: "Bootstrap",
+    image: "/stack/bootstrap.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
     name: "JavaScript",
     image: "/stack/javascript.svg",
     http: "",
@@ -77,6 +83,30 @@ const STACK = [
     id: uuidv4(),
     name: "GraphQL",
     image: "/stack/graphql.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
+    name: "Webpack",
+    image: "/stack/webpack.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
+    name: "ViteJS",
+    image: "/stack/vitejs.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
+    name: "JSON",
+    image: "/stack/json.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
+    name: "Linux",
+    image: "/stack/linux.svg",
     http: "",
   },
 ];

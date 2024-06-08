@@ -57,3 +57,12 @@
 @mixin transition_button {
   transition: 0.3s ease;
 }
+
+@mixin project-hover {
+  transition: box-shadow 0.5s ease;
+
+  &:hover,
+  &:active {
+    box-shadow: 0 0 10px 3px $color-grayscale-light--80;
+  }
+}

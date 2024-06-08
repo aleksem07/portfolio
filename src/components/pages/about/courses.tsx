@@ -1,13 +1,16 @@
 import styles from "@/styles/components/courses.module.scss";
-import COURSES from "@/common/courses";
+import CoursesArray from "@/common/courses";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Courses = () => {
+  const t = useTranslations("about-page");
+  const COURSES = CoursesArray();
+
   return (
     <section className={styles.courses}>
-      <h2 className={styles.courses__title}>Courses and advanced training:</h2>
-      <h2>Курсы и повышение квалификации</h2>
+      <h2 className={styles.courses__title}>{t("title-courses")}:</h2>
 
       <ul className={styles.courses__list}>
         {COURSES.map(
@@ -31,7 +34,7 @@ const Courses = () => {
                 <div className={styles.courses__container}>
                   <h3 className={styles.courses__name}>{name}</h3>
                   <p className={styles.courses__language}>
-                    Язык курса: <span>{language}</span>
+                    {t("language")}: <span>{language}</span>
                   </p>
                   <p className={styles.courses__date}>{date}</p>
                   <h4 className={styles.courses__subtitle}>{course}</h4>
@@ -42,7 +45,7 @@ const Courses = () => {
                     target="_blank"
                     title="подробнее"
                   >
-                    Подробнее
+                    {t("details")}
                   </Link>
                 </div>
               </li>
