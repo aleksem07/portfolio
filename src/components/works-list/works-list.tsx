@@ -34,7 +34,7 @@ const WorksList: React.FC<IWorks> = ({
               <Image
                 src={project.image}
                 className={styles.projects__image}
-                alt={`${project.alt} ${project.title}`}
+                alt={`${t("projects.block.alt-title")} ${project.title}`}
                 width={560}
                 height={620}
               />
