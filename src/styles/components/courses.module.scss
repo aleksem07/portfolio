@@ -1,9 +1,9 @@
-.teaching {
+.courses {
   margin-bottom: 200px;
   outline-offset: -5px;
 }
 
-.teaching__title {
+.courses__title {
   font-family: $font-second-family;
   font-weight: 700;
   font-size: $fz-48px;
@@ -11,16 +11,55 @@
   letter-spacing: -0.01em;
 }
 
-.teaching__list {
-  display: flex;
+.courses__list {
+  display: grid;
   gap: 2%;
 }
 
-.teaching__item {
+.courses__item {
+  padding-block: 50px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 5%;
   font-family: $font-inter;
   font-weight: 700;
   font-size: $fz-32px;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
   color: $color-text-dark-light;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid $color-text-dark-light;
+  }
+}
+
+.courses__name {
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+.courses__language {
+  font-size: $fz-18px;
+
+  & span {
+    text-transform: uppercase;
+  }
+}
+
+.courses__date {
+  font-size: $fz-18px;
+}
+
+.courses__subtitle {
+  margin-bottom: 30px;
+  font-size: $fz-28px;
+}
+
+.courses__desc {
+  font-size: $fz-18px;
+  color: $color-text-desc;
+}
+
+.courses__details {
+  font-size: $fz-14px;
+  border-bottom: 2px solid $color-text-dark-light;
 }

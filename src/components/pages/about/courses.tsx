@@ -5,30 +5,50 @@ import Link from "next/link";
 
 const Courses = () => {
   return (
-    <section className={styles.teaching}>
-      <h2 className={styles.teaching__title}>Courses and advanced training:</h2>
+    <section className={styles.courses}>
+      <h2 className={styles.courses__title}>Courses and advanced training:</h2>
       <h2>Курсы и повышение квалификации</h2>
 
-      <ul className={styles.teaching__list}>
-        {COURSES.map(({ http, id, image, name, course, desc, language }) => {
-          return (
-            <li className={styles.teaching__item} key={id}>
-              <Link href={http} target="_blank" title="подробнее">
-                <h3>{name}</h3>
-                <p>Язык курса: {language}</p>
-                <Image
-                  className={styles.teaching__image}
-                  src={image}
-                  alt={name}
-                  width={200}
-                  height={200}
-                />
-                <p>{course}</p>
-                <p>{desc}</p>
-              </Link>
-            </li>
-          );
-        })}
+      <ul className={styles.courses__list}>
+        {COURSES.map(
+          ({ http, id, image, name, course, desc, language, date }) => {
+            return (
+              <li className={styles.courses__item} key={id}>
+                <Link
+                  className={styles.courses__link_image}
+                  href={image}
+                  target="_blank"
+                  title="открыть"
+                >
+                  <Image
+                    className={styles.courses__image}
+                    src={image}
+                    alt={name}
+                    width={300}
+                    height={300}
+                  />
+                </Link>
+                <div className={styles.courses__container}>
+                  <h3 className={styles.courses__name}>{name}</h3>
+                  <p className={styles.courses__language}>
+                    Язык курса: <span>{language}</span>
+                  </p>
+                  <p className={styles.courses__date}>{date}</p>
+                  <h4 className={styles.courses__subtitle}>{course}</h4>
+                  <p className={styles.courses__desc}>{desc}</p>
+                  <Link
+                    className={styles.courses__details}
+                    href={http}
+                    target="_blank"
+                    title="подробнее"
+                  >
+                    Подробнее
+                  </Link>
+                </div>
+              </li>
+            );
+          }
+        )}
       </ul>
     </section>
   );
