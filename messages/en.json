@@ -80,6 +80,10 @@
     "plants": {
       "title": "Plants",
       "description": "Project 9 description"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Project 10 description"
     }
   },
 
