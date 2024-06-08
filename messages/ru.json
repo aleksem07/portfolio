@@ -39,17 +39,47 @@
     "block": {
       "title": "Мои проекты",
       "description": "Описание",
-      "stack": "Стек"
+      "stack": "Stack",
+      "detail-title": "Детали Проекта",
+      "detail-subtitle": "Подробности о проекте",
+      "alt-title": "Обложка проекта:",
+      "stack-title": "Стэк"
     },
     "nail-salon": {
       "title": "Студия ногтевого сервиса ",
-      "alt": "Обложка проекта: Студия ногтевого сервиса",
       "description": "Проект 1 описание"
     },
     "on-shelves": {
       "title": "По полочкам",
-      "alt": "Обложка проекта: По полочкам",
       "description": "Проект 2 описание"
+    },
+    "graphql": {
+      "title": "GraphiQL",
+      "description": "Проект 3 описание"
+    },
+    "kekstagram": {
+      "title": "Kekstagram",
+      "description": "Project 4 description"
+    },
+    "cat-energy": {
+      "title": "Cat Energy",
+      "description": "Project 5 description"
+    },
+    "drink2go": {
+      "title": "Drink2go",
+      "description": "Project 6 description"
+    },
+    "customer-development": {
+      "title": "Customer Development",
+      "description": "Project 7 description"
+    },
+    "scandi": {
+      "title": "Scandi",
+      "description": "Project 8 description"
+    },
+    "plants": {
+      "title": "Plants",
+      "description": "Project 9 description"
     }
   },
 

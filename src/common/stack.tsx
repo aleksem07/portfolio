@@ -15,7 +15,7 @@ const STACK = [
   },
   {
     id: uuidv4(),
-    name: "redux",
+    name: "Redux",
     image: "/stack/redux.svg",
     http: "",
   },
