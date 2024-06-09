@@ -51,7 +51,7 @@
     border-radius: 30px;
   }
 
-  @media (max-width: $width-desktop - 1px) {
+  @media (max-width: $width-desktop--small - 1px) {
     display: none;
   }
 }

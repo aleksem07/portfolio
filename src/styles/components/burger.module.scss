@@ -3,11 +3,19 @@
   cursor: pointer;
 
   @media (max-width: $width-desktop - 1) {
-    width: 5%;
+    width: 4%;
   }
 
   @media (max-width: $width-tablet - 1) {
-    width: 10%;
+    width: 6%;
+  }
+
+  @media (max-width: 600px) {
+    width: 7%;
+  }
+
+  @media (max-width: 400px) {
+    width: 8%;
   }
 
   span {
@@ -16,7 +24,7 @@
     background-color: $color-second-gray;
     transition: all 0.7s ease-in-out;
 
-    @media (max-width: $width-desktop - 1) {
+    @media (max-width: $width-desktop--small - 1) {
       display: block;
     }
 
