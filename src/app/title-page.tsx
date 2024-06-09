@@ -10,7 +10,7 @@ interface ITitlePageProps {
 const TitlePage: React.FC<ITitlePageProps> = ({
   title,
   desc,
-  project_name,
+  project_name = "",
 }) => {
   return (
     <div className={styles.title_page}>

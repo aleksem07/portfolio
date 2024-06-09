@@ -20,6 +20,10 @@
     @media (max-width: $width-desktop - 1) {
       max-width: 30%;
     }
+
+    @media (max-width: $width-tablet - 1) {
+      max-width: 100%;
+    }
   }
 
   & > :nth-child(5n + 4),

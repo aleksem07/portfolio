@@ -7,15 +7,24 @@
   justify-content: space-between;
   gap: 58px;
 
-  .get_know_me__desc {
-    display: flex;
+  @media (max-width: $width-tablet - 1) {
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  }
+}
 
-    @media (max-width: $width-desktop - 1) {
-      max-width: 63%;
-    }
+.get_know_me__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: $width-desktop - 1) {
+    max-width: 63%;
+  }
+
+  @media (max-width: $width-tablet - 1) {
+    max-width: 100%;
+    align-items: center;
   }
 }
 
@@ -26,6 +35,10 @@
   font-size: $fz-56px;
   color: #fff;
   line-height: 64px;
+
+  @media (max-width: $width-tablet - 1) {
+    font-size: $fz-44px;
+  }
 }
 
 .get_know_me__text {

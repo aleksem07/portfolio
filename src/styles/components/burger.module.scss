@@ -6,6 +6,10 @@
     width: 5%;
   }
 
+  @media (max-width: $width-tablet - 1) {
+    width: 10%;
+  }
+
   span {
     display: none;
     height: 4px;
@@ -31,7 +35,7 @@
     }
 
     &::after {
-      transform: translate(0, 5px);
+      transform: translate(0, 4px);
     }
   }
 

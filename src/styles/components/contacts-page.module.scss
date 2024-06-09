@@ -13,4 +13,8 @@
   gap: 50px;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: $width-tablet - 1) {
+    flex-direction: column;
+  }
 }

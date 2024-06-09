@@ -14,4 +14,8 @@
   @media (max-width: $width-desktop - 1) {
     font-size: $fz-56px;
   }
+
+  @media (max-width: $width-tablet - 1) {
+    font-size: $fz-44px;
+  }
 }

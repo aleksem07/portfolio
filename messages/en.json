@@ -17,7 +17,7 @@
 
   "buttons": {
     "explore_works": "Explore Works",
-    "about": "Discover more about me",
+    "about": "Discover more",
     "explore_more": "Explore more",
     "project": "Explore More"
   },
@@ -110,7 +110,7 @@
 
   "footer": {
     "title": "Get in Touch With Us",
-    "city": "Belgorod",
+    "city": "Saint Petersburg",
     "rights": "All Rights Reserved"
   },
 

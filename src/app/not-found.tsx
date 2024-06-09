@@ -16,7 +16,9 @@ export default function NotFound() {
 
   return (
     <div className="min-h-[100vh] flex flex-col justify-center items-center">
-      <h2 className="text-2xl">Извините, страница не найдена </h2>
+      <h2 className="text-2xl text-center mb-4">
+        Извините, страница не найдена{" "}
+      </h2>
 
       <p>404 Page not found</p>
 

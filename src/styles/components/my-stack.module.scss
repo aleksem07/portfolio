@@ -8,6 +8,10 @@
   font-size: $fz-48px;
   line-height: 167%;
   letter-spacing: -0.01em;
+
+  @media (max-width: $width-tablet - 1) {
+    font-size: $fz-36px;
+  }
 }
 
 .my_stack__list {
@@ -16,4 +20,10 @@
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
+}
+
+.my_stack__image {
+  @media (max-width: $width-tablet - 1) {
+    max-width: 75px;
+  }
 }

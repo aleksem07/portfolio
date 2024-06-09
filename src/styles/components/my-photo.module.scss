@@ -5,6 +5,10 @@
     width: 50%;
     margin-inline: auto;
   }
+
+  @media (max-width: $width-tablet - 1) {
+    width: 100%;
+  }
 }
 
 .my_photo__me {

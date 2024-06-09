@@ -2,6 +2,10 @@
   margin-bottom: 115px;
   display: flex;
   gap: 1%;
+
+  @media (max-width: $width-tablet - 1) {
+    flex-direction: column;
+  }
 }
 
 .getintouchwithme_title {
@@ -12,6 +16,11 @@
   font-size: $fz-64px;
   @media (max-width: $width-desktop - 1) {
     font-size: $fz-48px;
+  }
+
+  @media (max-width: $width-tablet - 1) {
+    font-size: $fz-44px;
+    margin-bottom: 40px;
   }
 }
 
@@ -55,5 +64,9 @@
 
   &:not(:first-child) {
     margin-bottom: 50px;
+  }
+
+  @media (max-width: $width-tablet - 1) {
+    padding-inline: 0;
   }
 }
