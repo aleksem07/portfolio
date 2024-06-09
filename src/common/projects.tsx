@@ -96,6 +96,15 @@ const Projects = () => {
       github: "https://github.com/aleksem07/plants",
       deploy: "https://aleksem07.github.io/plants/",
     },
+    {
+      id: uuidv4(),
+      title: t("portfolio.title"),
+      description: t("portfolio.description"),
+      image: "/projects/portfolio.png",
+      pageName: "portfolio",
+      github: "https://github.com/aleksem07/portfolio",
+      deploy: "https://portfolio-ecru-kappa-40.vercel.app",
+    },
   ];
   return PROJECTS;
 };

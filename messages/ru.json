@@ -17,7 +17,7 @@
 
   "buttons": {
     "explore_works": "Посмотреть работы",
-    "about": "Узнайте больше обо мне",
+    "about": "Узнайте больше",
     "explore_more": "Узнайте больше",
     "project": "Все проекты"
   },
@@ -46,7 +46,7 @@
       "stack-title": "Стэк"
     },
     "nail-salon": {
-      "title": "Студия ногтевого сервиса ",
+      "title": "Салон красоты",
       "description": "Проект 1 описание"
     },
     "on-shelves": {
@@ -80,6 +80,10 @@
     "plants": {
       "title": "Plants",
       "description": "Project 9 description"
+    },
+    "portfolio": {
+      "title": "Портфолио",
+      "description": "Project 10 description"
     }
   },
 
@@ -106,7 +110,7 @@
 
   "footer": {
     "title": "Свяжитесь со мной",
-    "city": "Белгород",
+    "city": "Санкт-Петербург",
     "rights": "Все права защищены"
   },
 

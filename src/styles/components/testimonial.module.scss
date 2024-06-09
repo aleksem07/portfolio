@@ -7,10 +7,18 @@
   gap: 57px;
   justify-content: center;
   align-items: flex-start;
+
+  @media (max-width: $width-tablet - 1) {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 .testimonial__container {
   flex: 1;
+  @media (max-width: $width-tablet - 1) {
+    order: 2;
+  }
 }
 
 .testimonial__title {
@@ -36,4 +44,11 @@
   height: 183px;
   background: url("/background/quotes.svg") no-repeat;
   background-size: contain;
+
+  @media (max-width: $width-tablet - 1) {
+    order: 1;
+    width: 100px;
+    height: 58px;
+    margin-left: auto;
+  }
 }

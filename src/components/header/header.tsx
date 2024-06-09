@@ -4,6 +4,7 @@ import Logo from "../logo/logo";
 import ChooseLang from "../choose-lang";
 import NavLinks from "@/common/nav-links";
 import { useRouter, usePathname } from "next/navigation";
+import Burger from "@/components/burger";
 
 const Header: React.FC = () => {
   const NAV_LINKS = NavLinks();
@@ -24,6 +25,7 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <Logo />
       <ChooseLang />
+      <Burger />
       <nav
         className={`${styles.header_nav} ${styles.nav}`}
         role="navigation"

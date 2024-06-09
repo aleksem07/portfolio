@@ -36,6 +36,7 @@ const GetInTouchWithMe = () => {
       >
         <label htmlFor="name">{t("form.name")}:</label>
         <input
+          className={styles.getintouchwithme_input}
           type="text"
           id="name"
           name="name"
@@ -44,6 +45,7 @@ const GetInTouchWithMe = () => {
         />
         <label htmlFor="subject">{t("form.subject")}:</label>
         <input
+          className={styles.getintouchwithme_input}
           type="text"
           id="subject"
           name="subject"
@@ -52,6 +54,7 @@ const GetInTouchWithMe = () => {
         />
         <label htmlFor="message">{t("form.message")}:</label>
         <input
+          className={styles.getintouchwithme_input}
           type="text"
           id="message"
           name="message"

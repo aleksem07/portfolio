@@ -12,7 +12,7 @@ const MyStack = () => {
         {STACK.map(({ name, id, image }) => (
           <li key={id}>
             <Image
-              className="bg-white rounded-full p-2"
+              className={`${styles.my_stack__image} bg-white rounded-full p-2`}
               src={image}
               alt={name}
               width={90}

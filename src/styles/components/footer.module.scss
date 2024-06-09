@@ -31,6 +31,14 @@
   font-weight: 700;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+
+  @media (max-width: $width-desktop - 1) {
+    font-size: $fz-36px;
+  }
+
+  @media (max-width: $width-tablet - 1) {
+    font-size: $fz-24px;
+  }
 }
 
 .footer__body {
@@ -38,7 +46,14 @@
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #949494;
+  align-items: baseline;
   font-family: $font-second-family;
+
+  @media (max-width: $width-tablet - 1) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .footer__body_contacts {
@@ -60,4 +75,12 @@
   font-weight: 700;
   font-size: $fz-24px;
   text-align: center;
+
+  @media (max-width: $width-desktop - 1) {
+    font-size: $fz-20px;
+  }
+
+  @media (max-width: $width-tablet - 1) {
+    font-size: $fz-16px;
+  }
 }

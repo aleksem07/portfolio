@@ -17,7 +17,7 @@
 
   "buttons": {
     "explore_works": "Explore Works",
-    "about": "Discover more about me",
+    "about": "Discover more",
     "explore_more": "Explore more",
     "project": "Explore More"
   },
@@ -46,7 +46,7 @@
       "stack-title": "Stack"
     },
     "nail-salon": {
-      "title": "Nail service studio",
+      "title": "Nail studio",
       "description": "Project 1 description"
     },
     "on-shelves": {
@@ -80,6 +80,10 @@
     "plants": {
       "title": "Plants",
       "description": "Project 9 description"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Project 10 description"
     }
   },
 
@@ -106,7 +110,7 @@
 
   "footer": {
     "title": "Get in Touch With Us",
-    "city": "Belgorod",
+    "city": "Saint Petersburg",
     "rights": "All Rights Reserved"
   },
 

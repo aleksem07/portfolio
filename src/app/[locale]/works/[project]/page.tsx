@@ -30,9 +30,17 @@ const Project: React.FC = () => {
     <>
       {currentProject ? (
         <>
-          <TitlePage title={t("detail-title")} desc={t("detail-subtitle")} />
+          <TitlePage
+            title={t("detail-title")}
+            desc={t("detail-subtitle")}
+            project_name={pathname.split("/")[3]}
+          />
           <section className={styles.project_detail}>
-            <Link target="_blank" href={`${currentProject.image}`}>
+            <Link
+              className={styles.project_detail__link}
+              target="_blank"
+              href={`${currentProject.image}`}
+            >
               <Image
                 className={styles.project_detail__image}
                 src={currentProject.image}

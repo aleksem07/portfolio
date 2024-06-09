@@ -1,5 +1,14 @@
 .my_photo {
   position: relative;
+
+  @media (max-width: $width-desktop - 1) {
+    width: 50%;
+    margin-inline: auto;
+  }
+
+  @media (max-width: $width-tablet - 1) {
+    width: 100%;
+  }
 }
 
 .my_photo__me {

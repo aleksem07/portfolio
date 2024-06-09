@@ -3,6 +3,22 @@
   margin-bottom: 193px;
   display: flex;
   gap: 5%;
+
+  @media (max-width: $width-tablet - 1) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.project_detail__link {
+  @media (max-width: $width-desktop - 1) {
+    max-width: 40%;
+    width: 100%;
+  }
+
+  @media (max-width: $width-tablet - 1) {
+    max-width: 100%;
+  }
 }
 
 .project_detail__image {
@@ -38,4 +54,8 @@
   align-items: end;
   display: flex;
   gap: 10px;
+
+  @media (max-width: $width-tablet - 1) {
+    justify-content: center;
+  }
 }
