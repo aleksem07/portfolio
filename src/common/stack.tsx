@@ -33,6 +33,18 @@ const STACK = [
   },
   {
     id: uuidv4(),
+    name: "MD",
+    image: "/stack/markdown.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
+    name: "JSON",
+    image: "/stack/json.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
     name: "CSS",
     image: "/stack/css3.svg",
     http: "",
@@ -75,6 +87,12 @@ const STACK = [
   },
   {
     id: uuidv4(),
+    name: "Bash",
+    image: "/stack/bash.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
     name: "GitHub",
     image: "/stack/github.svg",
     http: "",
@@ -99,14 +117,14 @@ const STACK = [
   },
   {
     id: uuidv4(),
-    name: "JSON",
-    image: "/stack/json.svg",
+    name: "Linux",
+    image: "/stack/linux.svg",
     http: "",
   },
   {
     id: uuidv4(),
-    name: "Linux",
-    image: "/stack/linux.svg",
+    name: "Windows",
+    image: "/stack/windows.svg",
     http: "",
   },
 ];

@@ -24,6 +24,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 94px 32px;
+  max-width: $width-max;
+  margin-inline: auto;
 }
 
 .projects__item {

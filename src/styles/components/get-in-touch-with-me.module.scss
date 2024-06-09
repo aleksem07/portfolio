@@ -24,23 +24,25 @@
     text-transform: uppercase;
   }
 
-  & > input {
-    padding: 10px;
-    padding-left: 0;
-    background-color: transparent;
-    border-bottom: 1px solid $color-text-dark-light;
-    font-size: $fz-20px;
-
-    &:not(:first-child) {
-      margin-bottom: 50px;
-    }
-  }
-
   & > .getintouchwithme_button {
     padding-block: 15px;
     font-size: $fz-24px;
     font-weight: 500;
     border-radius: 50px;
     max-width: max-content;
+  }
+}
+
+.getintouchwithme_input {
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  border-radius: 16px;
+  @include project-hover;
+  background-color: transparent;
+  border-bottom: 1px solid $color-text-dark-light;
+  font-size: $fz-20px;
+
+  &:not(:first-child) {
+    margin-bottom: 50px;
   }
 }

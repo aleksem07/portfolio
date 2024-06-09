@@ -33,6 +33,11 @@
   }
 }
 
+.courses__image {
+  @include project-hover;
+  border-radius: 0 16px;
+}
+
 .courses__name {
   text-transform: uppercase;
   letter-spacing: 0.13em;
