@@ -2,6 +2,10 @@
   width: 3%;
   cursor: pointer;
 
+  @media (max-width: $width-desktop - 1) {
+    width: 5%;
+  }
+
   span {
     display: none;
     height: 4px;

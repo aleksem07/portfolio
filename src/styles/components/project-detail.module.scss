@@ -5,6 +5,13 @@
   gap: 5%;
 }
 
+.project_detail__link {
+  @media (max-width: $width-desktop - 1) {
+    max-width: 40%;
+    width: 100%;
+  }
+}
+
 .project_detail__image {
   max-height: 50vh;
   object-fit: cover;

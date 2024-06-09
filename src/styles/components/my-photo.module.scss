@@ -1,5 +1,10 @@
 .my_photo {
   position: relative;
+
+  @media (max-width: $width-desktop - 1) {
+    width: 50%;
+    margin-inline: auto;
+  }
 }
 
 .my_photo__me {

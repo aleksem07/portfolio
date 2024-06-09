@@ -10,6 +10,9 @@
   font-family: $font-second-family;
   font-weight: 700;
   font-size: $fz-64px;
+  @media (max-width: $width-desktop - 1) {
+    font-size: $fz-48px;
+  }
 }
 
 .getintouchwithme_form {
@@ -22,6 +25,10 @@
     font-weight: 500;
     font-size: $fz-24px;
     text-transform: uppercase;
+
+    @media (max-width: $width-desktop - 1) {
+      font-size: $fz-18px;
+    }
   }
 
   & > .getintouchwithme_button {
@@ -30,6 +37,10 @@
     font-weight: 500;
     border-radius: 50px;
     max-width: max-content;
+
+    @media (max-width: $width-desktop - 1) {
+      font-size: $fz-18px;
+    }
   }
 }
 

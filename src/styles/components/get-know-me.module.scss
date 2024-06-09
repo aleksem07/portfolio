@@ -6,13 +6,17 @@
   display: flex;
   justify-content: space-between;
   gap: 58px;
-}
 
-.get_know_me__desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  .get_know_me__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media (max-width: $width-desktop - 1) {
+      max-width: 63%;
+    }
+  }
 }
 
 .get_know_me__title {

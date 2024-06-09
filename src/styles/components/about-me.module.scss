@@ -14,8 +14,11 @@
   font-size: $fz-80px;
   line-height: 105%;
   letter-spacing: -0.03em;
-}
 
+  @media (max-width: $width-desktop - 1) {
+    font-size: $fz-56px;
+  }
+}
 .about_me__image {
   margin-inline: auto;
   filter: contrast(1.35) brightness(85%);

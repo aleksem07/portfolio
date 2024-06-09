@@ -31,6 +31,10 @@
 .projects__item {
   box-sizing: border-box;
   justify-self: center;
+
+  @media (max-width: $width-desktop - 1) {
+    max-width: 40%;
+  }
 }
 
 .projects__link {

@@ -9,6 +9,10 @@
   font-family: $font-second-family;
   font-weight: 700;
   font-size: $fz-72px;
+
+  @media (max-width: $width-desktop - 1) {
+    font-size: $fz-60px;
+  }
 }
 
 .title_page__desc {
