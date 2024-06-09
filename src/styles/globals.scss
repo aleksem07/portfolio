@@ -13,6 +13,7 @@ body {
 
   height: auto;
   min-height: 100vh;
+  min-width: $width-min;
   display: flex;
   flex-direction: column;
   position: relative;
