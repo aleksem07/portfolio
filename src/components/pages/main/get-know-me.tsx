@@ -14,8 +14,14 @@ const GetKnowMe = () => {
       <div className={styles.get_know_me__desc}>
         <h3 className={styles.get_know_me__title}>{t("get_know_me.title")}</h3>
         <p className={styles.get_know_me__text}>{t("get_know_me.text")}</p>
-        <Link className="button" href={ROUTES.ABOUT}>
+        <Link className={`button ${styles.about_button}`} href={ROUTES.ABOUT}>
           {t("buttons.about")}
+        </Link>
+        <Link
+          className={`button ${styles.about_button}`}
+          href={ROUTES.CONTACTS}
+        >
+          {t("buttons.contact")}
         </Link>
       </div>
 
