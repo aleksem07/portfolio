@@ -2,11 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 type NavStateType = {
-  isOpen: boolean;
+  value: boolean;
 };
 
 const initialState: NavStateType = {
-  isOpen: false,
+  value: false,
 };
 
 const navIsOpenSlice = createSlice({
@@ -14,7 +14,7 @@ const navIsOpenSlice = createSlice({
   initialState,
   reducers: {
     setIsOpenNav: (state, action: PayloadAction<boolean>) => {
-      state.isOpen = action.payload;
+      state.value = action.payload;
     },
   },
 });

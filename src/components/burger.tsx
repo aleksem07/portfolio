@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 import styles from "@/styles/components/burger.module.scss";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+import { RootState } from "@/redux/store";
+import { setIsOpenNav } from "@/redux/nav-slice/nav-slice";
 
 const Burger = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const dispatch = useAppDispatch();
+  const navIsOpenNow = useAppSelector(
+    (state: RootState) => state.navIsOpen.value
+  );
+
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    const newIsOpen = !isOpen;
+    setIsOpen(newIsOpen);
+    dispatch(setIsOpenNav(newIsOpen));
   };
 
   return (
