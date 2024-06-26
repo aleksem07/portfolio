@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import "@/styles/main.scss";
 import ParallaxProviders from "./parallax-providers";
+import { Providers } from "@/redux/provider";
 
 type Props = {
   children: ReactNode;
@@ -12,7 +13,9 @@ export default function RootLayout({ children }: Props) {
   return (
     <html>
       <body>
-        <ParallaxProviders>{children}</ParallaxProviders>
+        <Providers>
+          <ParallaxProviders>{children}</ParallaxProviders>
+        </Providers>
       </body>
     </html>
   );
