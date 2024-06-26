@@ -5,6 +5,9 @@ import ChooseLang from "../choose-lang";
 import NavLinks from "@/common/nav-links";
 import { useRouter, usePathname } from "next/navigation";
 import Burger from "@/components/burger";
+import { useAppSelector, useAppDispatch } from "@/redux/hooks";
+import { RootState } from "@/redux/store";
+import { setIsOpenNav } from "@/redux/nav-slice/nav-slice";
 
 const Header: React.FC = () => {
   const NAV_LINKS = NavLinks();
@@ -16,9 +19,14 @@ const Header: React.FC = () => {
       .toLowerCase()
       .split("/")[1]
   }`;
+  const dispatch = useAppDispatch();
+  const navIsOpenNow = useAppSelector(
+    (state: RootState) => state.navIsOpen.value
+  );
 
   const handleChange = (href: string) => {
     router.push(`${href}`);
+    dispatch(setIsOpenNav(false));
   };
 
   return (
@@ -27,13 +35,17 @@ const Header: React.FC = () => {
       <ChooseLang />
       <Burger />
       <nav
-        className={`${styles.header_nav} ${styles.nav}`}
+        className={`${styles.header_nav} ${styles.nav} `}
         role="navigation"
         aria-label="Main navigation"
       >
-        <ul className={styles.nav_list}>
+        <ul
+          className={`${styles.nav_list} ${
+            navIsOpenNow ? `${styles.nav__open}` : `${styles.nav__close}`
+          }`}
+        >
           {NAV_LINKS.map(link => (
-            <li className={`${styles.nav_item}`} key={link.name}>
+            <li className={`${styles.nav_item} `} key={link.name}>
               <button
                 onClick={() => handleChange(link.href)}
                 className={`${
