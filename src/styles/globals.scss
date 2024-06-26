@@ -96,3 +96,7 @@ blockquote {
 img {
   background-color: $color-grayscale-dark--60;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

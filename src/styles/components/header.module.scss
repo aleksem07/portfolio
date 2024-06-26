@@ -55,3 +55,25 @@
     display: none;
   }
 }
+
+.nav__open {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: $color-grayscale-dark--090;
+
+  & > .nav_item {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    margin-inline: auto;
+    margin-block: 2rem;
+  }
+}
