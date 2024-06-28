@@ -51,18 +51,16 @@
   &.menu_icon_open {
     span {
       transform: rotate(135deg);
-      border-radius: 1%;
-      height: 8px;
+      height: 4px;
       background-color: $color-brand;
 
       &::before,
       &::after {
         background-color: $color-brand;
-        height: 8px;
+        height: 4px;
       }
 
       &::before {
-        border-radius: 1%;
         transform: translate(1px, 0px) rotate(89deg);
       }
 
