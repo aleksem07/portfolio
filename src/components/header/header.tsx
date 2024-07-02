@@ -34,11 +34,7 @@ const Header: React.FC = () => {
       <Logo />
       <ChooseLang />
       <Burger />
-      <nav
-        className={`${styles.header_nav} ${styles.nav} `}
-        role="navigation"
-        aria-label="Main navigation"
-      >
+      <nav>
         <ul
           className={`${styles.nav_list} ${
             navIsOpenNow ? `${styles.nav__open}` : `${styles.nav__close}`

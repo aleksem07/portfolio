@@ -1,9 +1,12 @@
 import styles from "@/styles/components/about-me.module.scss";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
+import ROUTES from "@/common/routes";
 
 const AboutMe = () => {
   const t = useTranslations("about-page");
+  const t_button = useTranslations("");
 
   return (
     <section className={styles.about_me}>
@@ -15,6 +18,9 @@ const AboutMe = () => {
         width={500}
         height={500}
       />
+      <Link className={`button ${styles.about_button}`} href={ROUTES.CONTACTS}>
+        {t_button("buttons.contact")}
+      </Link>
     </section>
   );
 };

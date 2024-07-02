@@ -99,7 +99,7 @@
       "project-detail": "Details About The Porject",
       "about": "Little Brief About Myself",
       "works": "Showcase About Works",
-      "contacts": "For Any Project Knock Us"
+      "contacts": "For cooperation"
     }
   },
 
@@ -110,7 +110,7 @@
   },
 
   "footer": {
-    "title": "Get in Touch With Us",
+    "title": "Get in Touch With Me",
     "city": "Saint Petersburg",
     "rights": "All Rights Reserved"
   },
@@ -127,7 +127,7 @@
 
   "about-page": {
     "about": {
-      "title": "My mission is to make a website so that you are satisfied.",
+      "title": "My goal is to complete the job to your satisfaction.",
       "desc": "234"
     },
     "title-tools": "Languages and Tools",

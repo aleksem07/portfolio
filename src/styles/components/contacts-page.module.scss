@@ -9,12 +9,19 @@
 
 .contacts__container {
   margin-bottom: 50px;
-  display: flex;
+  display: grid;
   gap: 50px;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
 
   @media (max-width: $width-tablet - 1) {
     flex-direction: column;
   }
+}
+
+.telegram {
+  font-family: $font-second-family;
+  font-weight: 700;
+  font-size: $fz-24px;
+  text-align: center;
 }

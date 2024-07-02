@@ -11,7 +11,7 @@ type Props = {
 // is required, even if it's just passing children through.
 export default function RootLayout({ children }: Props) {
   return (
-    <html>
+    <html lang="ru">
       <body>
         <Providers>
           <ParallaxProviders>{children}</ParallaxProviders>

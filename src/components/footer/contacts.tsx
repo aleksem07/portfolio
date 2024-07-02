@@ -9,15 +9,15 @@ interface IContactsProps {
 
 const Contacts: React.FC<IContactsProps> = ({ className, classIcon }) => {
   return (
-    <>
-      <div className={`${styles.footer__body_links} ${className || ""}`}>
-        {CONTACTS.map(({ name, Icon, link }) => (
-          <Link href={link} target="_blank" key={name}>
-            <Icon className={classIcon} />
+    <ul className={`${styles.footer__body_links} ${className || ""}`}>
+      {CONTACTS.map(({ name, Icon, link }) => (
+        <li key={name}>
+          <Link href={link} target="_blank" rel="noopener noreferrer">
+            <Icon className={classIcon} aria-label={name} />
           </Link>
-        ))}
-      </div>
-    </>
+        </li>
+      ))}
+    </ul>
   );
 };
 

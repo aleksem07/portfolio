@@ -11,10 +11,10 @@ const Footer = () => {
   const t = useTranslations();
   return (
     <footer className={styles.footer}>
-      <header className={styles.footer__header}>
+      <div className={styles.footer__header}>
         <h4 className={styles.footer__title}>{t("footer.title")}</h4>
         <Email className={styles.email} />
-      </header>
+      </div>
       <div className={styles.footer__body}>
         <Logo />
         <City />
@@ -23,9 +23,7 @@ const Footer = () => {
           <Contacts />
         </div>
       </div>
-      <footer>
-        <AllRightsReserved />
-      </footer>
+      <AllRightsReserved />
     </footer>
   );
 };
