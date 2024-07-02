@@ -99,7 +99,7 @@
       "project-detail": "Details About The Porject",
       "about": "Little Brief About Myself",
       "works": "Showcase About Works",
-      "contacts": "For Any Project Knock Us"
+      "contacts": "For cooperation"
     }
   },
 
@@ -110,7 +110,7 @@
   },
 
   "footer": {
-    "title": "Get in Touch With Us",
+    "title": "Get in Touch With Me",
     "city": "Saint Petersburg",
     "rights": "All Rights Reserved"
   },
