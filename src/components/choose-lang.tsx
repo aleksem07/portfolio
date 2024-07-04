@@ -20,6 +20,7 @@ export default function LanguageChanger() {
           alt={t("select_lang.ru")}
           width={30}
           height={30}
+          className="w-[auto]"
         />
       </button>
       <button onClick={() => handleChange("en")}>
@@ -28,6 +29,7 @@ export default function LanguageChanger() {
           alt={t("select_lang.en")}
           width={30}
           height={30}
+          className="w-[auto]"
         />
       </button>
     </div>
