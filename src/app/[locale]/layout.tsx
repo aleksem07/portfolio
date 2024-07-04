@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "desc",
+  description: "portfolio by Alexey Semyachkin",
 };
 
 export default async function LocaleLayout({
