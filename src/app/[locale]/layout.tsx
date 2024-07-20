@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import { generateStaticParams } from "@/components/generateStaticParams";
 
 import type { Metadata } from "next";
 
@@ -27,3 +28,5 @@ export default async function LocaleLayout({
     </NextIntlClientProvider>
   );
 }
+
+export { generateStaticParams };

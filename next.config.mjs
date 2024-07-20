@@ -10,6 +10,8 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  output: "export",
+  distDir: "dist",
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
     prependData: `
