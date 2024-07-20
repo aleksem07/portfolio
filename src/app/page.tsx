@@ -1,6 +1,12 @@
-import { redirect } from "next/navigation";
+import MainPage from "@/components/pages/main/main-page";
+import BackgroundBall from "@/components/background-ball";
 
-// This page only renders when the app is built statically (output: 'export')
-export default function RootPage() {
-  redirect("/ru");
+export default function Index() {
+  return (
+    <>
+      <h1 className="visually_hidden">{"h1"}</h1>
+      <BackgroundBall right={"5%"} />
+      <MainPage />
+    </>
+  );
 }

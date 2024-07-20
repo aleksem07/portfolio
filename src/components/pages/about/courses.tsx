@@ -2,15 +2,15 @@ import styles from "@/styles/components/courses.module.scss";
 import CoursesArray from "@/common/courses";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+
 
 const Courses = () => {
-  const t = useTranslations("about-page");
+
   const COURSES = CoursesArray();
 
   return (
     <section className={styles.courses}>
-      <h2 className={styles.courses__title}>{t("title-courses")}:</h2>
+      <h2 className={styles.courses__title}>{"title-courses"}:</h2>
 
       <ul className={styles.courses__list}>
         {COURSES.map(
@@ -34,7 +34,7 @@ const Courses = () => {
                 <div className={styles.courses__container}>
                   <h3 className={styles.courses__name}>{name}</h3>
                   <p className={styles.courses__language}>
-                    {t("language")}: <span>{language}</span>
+                    {"language"}: <span>{language}</span>
                   </p>
                   <p className={styles.courses__date}>{date}</p>
                   <h4 className={styles.courses__subtitle}>{course}</h4>
@@ -45,7 +45,7 @@ const Courses = () => {
                     target="_blank"
                     title="подробнее"
                   >
-                    {t("details")}
+                    {"details"}
                   </Link>
                 </div>
               </li>

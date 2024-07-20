@@ -2,6 +2,7 @@
   z-index: 3;
   width: 3%;
   cursor: pointer;
+  margin-left: auto;
 
   @media (max-width: $width-desktop - 1) {
     width: 4%;

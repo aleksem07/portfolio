@@ -1,5 +1,4 @@
 import { v4 as uuidv4 } from "uuid";
-import { useTranslations } from "next-intl";
 
 interface ICoursesProps {
   id: string;
@@ -13,7 +12,6 @@ interface ICoursesProps {
 }
 
 const CoursesArray = () => {
-  const t = useTranslations("about-page.courses");
   const COURSES: ICoursesProps[] = [
     {
       id: uuidv4(),
@@ -21,7 +19,7 @@ const CoursesArray = () => {
       course: "Front-end Developer",
       image: "/courses/htmlacademy.jpg",
       http: "https://htmlacademy.ru/profession/frontender",
-      desc: t("html-academy.frontend"),
+      desc: "html-academy.frontend",
       language: "ru",
       date: "may 2023",
     },
@@ -31,7 +29,7 @@ const CoursesArray = () => {
       course: "JavaScript/Front-end 2023Q1 (javascript)",
       image: "/courses/rsschool.jpg",
       http: "https://rs.school/courses/javascript-ru",
-      desc: t("rs-school.frontend"),
+      desc: "rs-school.frontend",
       language: "en",
       date: "september 2023",
     },
@@ -41,7 +39,7 @@ const CoursesArray = () => {
       course: "React 2023 Q4 (react)",
       image: "/courses/react2023q4.png",
       http: "https://rs.school/courses/reactjs",
-      desc: t("rs-school.react"),
+      desc: "rs-school.react",
       language: "en",
       date: "january 2024",
     },
@@ -51,7 +49,7 @@ const CoursesArray = () => {
       course: "Technical skills scoring",
       image: "/courses/htmlacademy.jpg",
       http: "https://htmlacademy.ru/membrana-results/1915851-1-899a8f16",
-      desc: t("html-academy.scoring"),
+      desc: "html-academy.scoring",
       language: "ru",
       date: "march 2024",
     },

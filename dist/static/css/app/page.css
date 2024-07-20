@@ -1,0 +1,396 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/styles/components/promo.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Literata:regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800&display=swap);
+.promo_promo__K1Oej {
+  margin-bottom: 276px;
+  text-align: center;
+}
+
+.promo_promo__title__MErtj {
+  font-family: "Literata", sans-serif;
+  margin-bottom: 93px;
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+@media (max-width: 1439px) {
+  .promo_promo__title__MErtj {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 755px) {
+  .promo_promo__title__MErtj {
+    font-size: 2.75rem;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/styles/components/my-photo.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Literata:regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800&display=swap);
+.my-photo_my_photo__xP3SP {
+  position: relative;
+}
+@media (max-width: 1439px) {
+  .my-photo_my_photo__xP3SP {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 755px) {
+  .my-photo_my_photo__xP3SP {
+    width: 100%;
+  }
+}
+
+.my-photo_my_photo__me__A7Twb {
+  border-radius: 30px;
+  width: auto;
+  object-fit: cover;
+  height: 506px;
+  position: relative;
+}
+
+.my-photo_my_photo_decor__horizontal__IMk2N::before {
+  content: "";
+  width: 110px;
+  height: 34px;
+  position: absolute;
+  top: -15px;
+  right: 0;
+  border: 1px solid #ff9143;
+  border-radius: 30px;
+}
+
+.my-photo_my_photo_decor__vertical___ZyLK::before {
+  content: "";
+  width: 55px;
+  height: 178px;
+  position: absolute;
+  bottom: 50px;
+  left: -30px;
+  border: 1px solid #ff9143;
+  border-radius: 30px;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/styles/components/get-know-me.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Literata:regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800&display=swap);
+.get-know-me_get_know_me__EvCR7 {
+  padding-inline: 10%;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 58px;
+}
+@media screen and (max-width: 1440px) {
+  .get-know-me_get_know_me__EvCR7 {
+    padding-inline: 5%;
+  }
+}
+@media (max-width: 755px) {
+  .get-know-me_get_know_me__EvCR7 {
+    flex-direction: column;
+  }
+}
+
+.get-know-me_get_know_me__desc__39pdo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 1439px) {
+  .get-know-me_get_know_me__desc__39pdo {
+    max-width: 63%;
+  }
+}
+@media (max-width: 755px) {
+  .get-know-me_get_know_me__desc__39pdo {
+    max-width: 100%;
+    align-items: center;
+  }
+}
+
+.get-know-me_get_know_me__title__6ZchF {
+  margin-bottom: 26px;
+  font-family: "Literata", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #fff;
+  line-height: 64px;
+}
+@media (max-width: 755px) {
+  .get-know-me_get_know_me__title__6ZchF {
+    font-size: 2.75rem;
+  }
+}
+
+.get-know-me_get_know_me__text__ku979 {
+  margin-bottom: 76px;
+  font-size: 1.125rem;
+  line-height: 154%;
+  letter-spacing: 0.06em;
+  color: #a8a8a8;
+}
+
+.get-know-me_about_button__rL_1j {
+  display: block;
+  margin-inline: auto;
+  min-width: 50%;
+  margin-bottom: 30px;
+}
+@media (min-width: 755px) {
+  .get-know-me_about_button__rL_1j {
+    margin-bottom: 30px;
+    width: max-content;
+    margin-inline: 0 auto;
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/styles/components/background-ball.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Literata:regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800&display=swap);
+@keyframes background-ball_ball__pKN9x {
+  0% {
+    border-radius: 30px 0px 50px 0px;
+    filter: blur(90px);
+  }
+  20% {
+    border-radius: 50%;
+    filter: blur(35px);
+  }
+  35% {
+    border-radius: 50%;
+    filter: blur(60px);
+  }
+  50% {
+    border-radius: 70px 60px 100px 95px;
+    filter: blur(50px);
+  }
+  60% {
+    border-radius: 50%;
+    filter: blur(60px);
+  }
+  75% {
+    border-radius: 90%;
+    filter: blur(35px);
+  }
+  100% {
+    border-radius: 30px 0px 50px 0px;
+    filter: blur(90px);
+  }
+}
+section:has(.background-ball_background__ball__watkR) {
+  position: relative;
+}
+
+.background-ball_background__ball__watkR {
+  position: absolute;
+  transform: translate(-200px, 250px);
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 25px solid #ffffff;
+  box-shadow: 0 0 0px 70px rgba(255, 255, 255, 0.3);
+  animation: background-ball_ball__pKN9x 5s forwards infinite;
+  opacity: 0.2;
+  filter: blur(50px);
+}
+@media screen and (max-width: 1440px) {
+  .background-ball_background__ball__watkR {
+    right: 5%;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/styles/components/project-highlight.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Literata:regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800&display=swap);
+.project-highlight_projects__xTRHT {
+  padding-inline: 10%;
+  margin-bottom: 166px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1440px) {
+  .project-highlight_projects__xTRHT {
+    padding-inline: 5%;
+  }
+}
+
+.project-highlight_projects__title__jxj0x {
+  font-family: "Literata", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 54px;
+}
+@media (max-width: 755px) {
+  .project-highlight_projects__title__jxj0x {
+    font-size: 3rem;
+  }
+}
+
+.project-highlight_projects__button__Y1tO6 {
+  margin-bottom: 76px;
+  margin-inline: auto;
+  display: inline-block;
+}
+
+.project-highlight_projects__container__ABWfp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 94px 32px;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+.project-highlight_projects__item__52xWs {
+  box-sizing: border-box;
+  justify-self: center;
+}
+@media (max-width: 1439px) {
+  .project-highlight_projects__item__52xWs {
+    max-width: 40%;
+  }
+}
+@media (max-width: 755px) {
+  .project-highlight_projects__item__52xWs {
+    max-width: 100%;
+  }
+}
+
+.project-highlight_projects__image__phj_V {
+  object-fit: cover;
+  object-position: top;
+  transition: box-shadow 0.5s ease;
+  outline: none;
+  border: none;
+  margin-bottom: 32px;
+  aspect-ratio: 1/1.107;
+  border-radius: 16px;
+}
+.project-highlight_projects__image__phj_V:hover, .project-highlight_projects__image__phj_V:active, .project-highlight_projects__image__phj_V:focus-visible {
+  box-shadow: 0 0 10px 3px #9ea3ae;
+}
+
+.project-highlight_projects__item_title___7gIA {
+  margin-bottom: 32px;
+  font-family: "Literata", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 133%;
+  position: relative;
+}
+.project-highlight_projects__item_title___7gIA::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(50%);
+  width: 48px;
+  height: 1px;
+  background-color: #ff9143;
+}
+
+.project-highlight_projects__item_desc___yZl0 {
+  margin-bottom: 8px;
+  max-width: fit-content;
+  font-size: 0.875rem;
+  line-height: 157%;
+  letter-spacing: 0.02em;
+}
+.project-highlight_projects__item_desc___yZl0 span {
+  color: #696969;
+}
+
+.project-highlight_projects__stack_list__8lXLj {
+  max-width: fit-content;
+  display: inline;
+}
+
+.project-highlight_projects__stack_container__6uG0i {
+  display: flex;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/styles/components/testimonial.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Literata:regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800&display=swap);
+.testimonial_testimonial__szIav {
+  margin-bottom: 119px;
+  padding-inline: 10%;
+  display: flex;
+  gap: 57px;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1440px) {
+  .testimonial_testimonial__szIav {
+    padding-inline: 5%;
+  }
+}
+@media (max-width: 755px) {
+  .testimonial_testimonial__szIav {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.testimonial_testimonial__container__yl_Yk {
+  flex: 1;
+}
+@media (max-width: 755px) {
+  .testimonial_testimonial__container__yl_Yk {
+    order: 2;
+  }
+}
+
+.testimonial_testimonial__title__9S_xG {
+  font-weight: 700;
+  font-size: 64px;
+  font-family: "Literata", sans-serif;
+}
+
+.testimonial_testimonial__desc__qB3tj {
+  padding-bottom: 35px;
+  font-size: 1.125rem;
+  color: #949494;
+}
+
+.testimonial_testimonial__author__m0sRI {
+  font-family: "Literata", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.testimonial_testimonial__quotes__Mz_ri {
+  width: 199px;
+  height: 183px;
+  background: url("/background/quotes.svg") no-repeat;
+  background-size: contain;
+}
+@media (max-width: 755px) {
+  .testimonial_testimonial__quotes__Mz_ri {
+    order: 1;
+    width: 100px;
+    height: 58px;
+    margin-left: auto;
+  }
+}
