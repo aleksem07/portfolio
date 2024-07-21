@@ -39,6 +39,8 @@ const YandexMetrika = () => {
           src="https://mc.yandex.ru/watch/97881656"
           style={{ position: "absolute", left: "-9999px" }}
           alt=""
+          width={0}
+          height={0}
         />
       </div>
     </noscript>

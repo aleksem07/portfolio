@@ -1,0 +1,16 @@
+@keyframes logo-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%) skewX(0);
+  }
+  30% {
+    transform: translateY(5px) skewX(20deg);
+  }
+  70% {
+    transform: translateY(-5px) skewX(-20deg);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(0) skewX(0);
+  }
+}

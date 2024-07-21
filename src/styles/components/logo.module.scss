@@ -1,11 +1,12 @@
-@import "/src/styles/default_variables.scss";
+@import "/src/styles/animations/logo.scss";
 
 .logo {
   font-family: Rubik;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: $fz-20px;
   line-height: 17px;
   opacity: 0.5;
   text-wrap: nowrap;
+  animation: logo-fade-in 0.5s ease;
 }
