@@ -16,14 +16,14 @@ const ProjectDetail: React.FC<{ currentProject: any }> = ({
       <Image
         className={styles.project_detail__image}
         src={currentProject.image}
-        alt={"alt-title"}
+        alt={`Обложка проекта: ${currentProject.title}`}
         width={500}
         height={100}
       />
     </Link>
     <div className={styles.project_detail__desc_container}>
       <h3 className={styles.project_detail__title}>{currentProject.title}</h3>
-      <p className={styles.project_detail__stack}>{"stack-title"}</p>
+      <p className={styles.project_detail__stack}>{"Стэк"}</p>
       <p className={styles.project_detail__desc}>
         {currentProject.description}
       </p>

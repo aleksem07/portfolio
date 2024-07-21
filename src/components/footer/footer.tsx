@@ -6,13 +6,11 @@ import Phone from "@/components/phone";
 import Email from "@/components/email";
 import City from "@/components/city";
 
-
 const Footer = () => {
-
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__header}>
-        <h4 className={styles.footer__title}>{"footer.title"}</h4>
+        <h4 className={styles.footer__title}>{"Свяжитесь со мной"}</h4>
         <Email className={styles.email} />
       </div>
       <div className={styles.footer__body}>

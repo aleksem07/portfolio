@@ -8,7 +8,7 @@ const MyPhoto = () => {
       <Image
         src="/me.jpg"
         className={styles.my_photo__me}
-        alt={"dev_photo.dev_alt"}
+        alt={"Фото разработчика"}
         width={454}
         height={506}
       />

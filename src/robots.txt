@@ -1,0 +1,18 @@
+# Allow all search engines to crawl all content
+User-agent: *
+Disallow:
+
+# Disallow crawling of specific directories
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /admin/
+
+# Allow specific search engines to crawl everything
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+# Sitemap location
+Sitemap: https://www.aleksem07.website/sitemap.xml

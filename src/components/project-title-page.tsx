@@ -5,8 +5,8 @@ const ProjectTitlePage: React.FC<{ projectName: string }> = ({
   projectName,
 }) => (
   <TitlePage
-    title={"detail-title"}
-    desc={"detail-subtitle"}
+    title={"Детали Проекта"}
+    desc={"Подробнее о проекте"}
     project_name={projectName}
   />
 );

@@ -1,4 +1,3 @@
-
 import { v4 as uuidv4 } from "uuid";
 
 interface IProject {
@@ -12,13 +11,11 @@ interface IProject {
 }
 
 const Projects = () => {
-
-
   const PROJECTS: IProject[] = [
     {
       id: uuidv4(),
-      title: "nail-salon.title",
-      description: "nail-salon.description",
+      title: "Салон красоты",
+      description: "Описание проекта",
       image: "/projects/nail-salon.jpg",
       pageName: "nail-salon",
       github: "https://github.com/aleksem07/nail-salon",
@@ -26,8 +23,8 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
-      title: "on-shelves.title",
-      description: "on-shelves.description",
+      title: "По полочкам",
+      description: "Описание проекта",
       image: "/projects/onShelves.png",
       pageName: "on-shelves",
       github: "https://github.com/aleksem07/onShelves",
@@ -35,8 +32,8 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
-      title: "graphql.title",
-      description: "graphql.description",
+      title: "GraphiQL",
+      description: "Описание проекта",
       image: "/projects/graphiql.png",
       pageName: "graphiql",
       github: "https://github.com/aleksem07/graphiql-app/pull/3",
@@ -44,8 +41,8 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
-      title: "kekstagram.title",
-      description: "kekstagram.description",
+      title: "Kekstagram",
+      description: "Описание проекта",
       image: "/projects/kekstagram.png",
       pageName: "kekstagram",
       github: "https://github.com/aleksem07/kekstagram",
@@ -53,8 +50,8 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
-      title: "cat-energy.title",
-      description: "cat-energy.description",
+      title: "Cat Energy",
+      description: "Описание проекта",
       image: "/projects/cat-energy.png",
       pageName: "cat-energy",
       github: "https://github.com/aleksem07/catEnergy",
@@ -62,8 +59,8 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
-      title: "drink2go.title",
-      description: "drink2go.description",
+      title: "Drink2go",
+      description: "Описание проекта",
       image: "/projects/drink-to-go.png",
       pageName: "drink2go",
       github: "https://github.com/aleksem07/Drink2Go",
@@ -71,8 +68,8 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
-      title: "customer-development.title",
-      description: "customer-development.description",
+      title: "Customer Development",
+      description: "Описание проекта",
       image: "/projects/customer-development.jpg",
       pageName: "customer-development",
       github: "https://github.com/aleksem07/customer_development--landing",
@@ -80,8 +77,8 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
-      title: "scandi.title",
-      description: "scandi.description",
+      title: "Scandi",
+      description: "Описание проекта",
       image: "/projects/scandi.jpg",
       pageName: "scandi",
       github: "https://github.com/aleksem07/htmlacademy-marathon5.0",
@@ -89,8 +86,8 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
-      title: "plants.title",
-      description: "plants.description",
+      title: "Plants",
+      description: "Описание проекта",
       image: "/projects/plants.png",
       pageName: "plants",
       github: "https://github.com/aleksem07/plants",
@@ -98,8 +95,8 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
-      title: "portfolio.title",
-      description: "portfolio.description",
+      title: "Портфолио",
+      description: "Описание проекта",
       image: "/projects/portfolio.png",
       pageName: "portfolio",
       github: "https://github.com/aleksem07/portfolio",

@@ -33,7 +33,7 @@ const WorksList: React.FC<IWorks> = ({
               <Image
                 src={project.image}
                 className={styles.projects__image}
-                alt={`${"projects.block.alt-title"} ${project.title}`}
+                alt={`${"Обложка проекта:"} ${project.title}`}
                 width={560}
                 height={620}
               />
@@ -42,7 +42,7 @@ const WorksList: React.FC<IWorks> = ({
 
               <h5 className={styles.projects__item_desc}>
                 <span>
-                  {"projects.block.description"}:{"\u00A0"}
+                  {"Описание"}:{"\u00A0"}
                 </span>
                 {project.description}
               </h5>
@@ -50,7 +50,7 @@ const WorksList: React.FC<IWorks> = ({
               <div className={styles.projects__stack_container}>
                 <h5 className={styles.projects__item_desc}>
                   <span>
-                    {"projects.block.stack"}:{"\u00A0"}
+                    {"Stack"}:{"\u00A0"}
                   </span>
                 </h5>
 

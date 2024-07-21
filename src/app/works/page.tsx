@@ -5,7 +5,7 @@ import { generateStaticParams } from "@/components/generateStaticParams";
 export default function About() {
   return (
     <>
-      <TitlePage title={"title.works"} desc={"desc.works"} />
+      <TitlePage title={"Мои проекты"} desc={"Список работ"} />
       <WorksPage />
     </>
   );

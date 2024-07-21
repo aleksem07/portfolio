@@ -3,19 +3,19 @@ import ROUTES from "./routes";
 const NavLinks = () => {
   const NAV_LINKS = [
     {
-      name: "navigate.home",
+      name: "Главная",
       href: `${ROUTES.MAIN}`,
     },
     {
-      name: "navigate.about",
+      name: "Обо мне",
       href: `${ROUTES.ABOUT}`,
     },
     {
-      name: "navigate.works",
+      name: "Работы",
       href: `${ROUTES.WORKS}`,
     },
     {
-      name: "navigate.contacts",
+      name: "Контакты",
       href: `${ROUTES.CONTACTS}`,
     },
   ];

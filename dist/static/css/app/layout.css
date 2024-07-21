@@ -1002,6 +1002,9 @@ video {
 .visible{
   visibility: visible;
 }
+.absolute{
+  position: absolute;
+}
 .mb-24{
   margin-bottom: 6rem;
 }

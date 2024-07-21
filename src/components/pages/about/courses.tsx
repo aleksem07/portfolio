@@ -3,14 +3,14 @@ import CoursesArray from "@/common/courses";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const Courses = () => {
-
   const COURSES = CoursesArray();
 
   return (
     <section className={styles.courses}>
-      <h2 className={styles.courses__title}>{"title-courses"}:</h2>
+      <h2 className={styles.courses__title}>
+        {"Курсы и повышение квалификации"}:
+      </h2>
 
       <ul className={styles.courses__list}>
         {COURSES.map(
@@ -34,7 +34,7 @@ const Courses = () => {
                 <div className={styles.courses__container}>
                   <h3 className={styles.courses__name}>{name}</h3>
                   <p className={styles.courses__language}>
-                    {"language"}: <span>{language}</span>
+                    {"Язык"}: <span>{language}</span>
                   </p>
                   <p className={styles.courses__date}>{date}</p>
                   <h4 className={styles.courses__subtitle}>{course}</h4>
@@ -45,7 +45,7 @@ const Courses = () => {
                     target="_blank"
                     title="подробнее"
                   >
-                    {"details"}
+                    {"Подробнее"}
                   </Link>
                 </div>
               </li>

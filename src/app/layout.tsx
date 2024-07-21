@@ -4,6 +4,8 @@ import ParallaxProviders from "./parallax-providers";
 import { Providers } from "@/redux/provider";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import YandexMetrika from "@/components/metriks/yandex-metrika";
+import { Suspense } from "react";
 
 type Props = {
   children: ReactNode;
@@ -12,8 +14,21 @@ type Props = {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "portfolio by Alexey Semyachkin",
+  title: "aleksem07 - webDev",
+  description:
+    "Создание динамичных и адаптивных веб-сайтов для вашего бизнеса.",
+  other: {
+    "google-site-verification": "mR5_SfZjoIpQ58orrLcVxJBAc31P9etE40nyvRqeLsc",
+    "yandex-verification": "71b8da4cc3d2aed0",
+  },
+  keywords: [
+    "разработка веб-сайтов",
+    "сайт для вашего бизнеса",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "создать лендинг",
+  ],
 };
 
 // Since we have a `not-found.tsx` page on the root, a layout file
@@ -23,6 +38,9 @@ export default function RootLayout({ children }: Props) {
     <html lang="ru">
       <body>
         <Providers>
+          <Suspense>
+            <YandexMetrika />
+          </Suspense>
           <Header />
           <ParallaxProviders>{children}</ParallaxProviders>
           <Footer />

@@ -7,16 +7,18 @@ import ROUTES from "@/common/routes";
 const AboutMe = () => {
   return (
     <section className={styles.about_me}>
-      <h2 className={styles.about_me__title}>{"about.title"}</h2>
+      <h2 className={styles.about_me__title}>
+        {"Моя цель — сделать работу так, чтобы вы остались довольны."}
+      </h2>
       <Image
         className={styles.about_me__image}
         src="/me2.jpg"
-        alt="my photo"
+        alt="Фото разработчика"
         width={500}
         height={500}
       />
       <Link className={`button ${styles.about_button}`} href={ROUTES.CONTACTS}>
-        {"buttons.contact"}
+        {"Контакты"}
       </Link>
     </section>
   );

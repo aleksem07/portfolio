@@ -5,9 +5,11 @@ import ROUTES from "@/common/routes";
 const Promo = () => {
   return (
     <section className={styles.promo}>
-      <h2 className={styles.promo__title}>{"promo.title"}</h2>
+      <h2 className={styles.promo__title}>
+        {"Разработка динамичных и адаптивных веб-сайтов для вашего бизнеса."}
+      </h2>
       <Link className="button" href={ROUTES.WORKS}>
-        {"buttons.explore_works"}
+        {"Посмотреть работы"}
       </Link>
     </section>
   );
