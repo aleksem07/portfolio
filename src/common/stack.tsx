@@ -111,6 +111,12 @@ const STACK = [
   },
   {
     id: uuidv4(),
+    name: "Webpack",
+    image: "/stack/gulp.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
     name: "ViteJS",
     image: "/stack/vitejs.svg",
     http: "",
@@ -125,6 +131,18 @@ const STACK = [
     id: uuidv4(),
     name: "Windows",
     image: "/stack/windows.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
+    name: "Figma",
+    image: "/stack/figma.svg",
+    http: "",
+  },
+  {
+    id: uuidv4(),
+    name: "VSCode",
+    image: "/stack/vscode.svg",
     http: "",
   },
 ];

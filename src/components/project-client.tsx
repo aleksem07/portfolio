@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Projects from "@/common/projects";
 import ProjectDetail from "@/components/project-detail";
 import ProjectTitlePage from "@/components/project-title-page";
-import NotFound from "@/app/not-found";
+import Loading from "@/app/loading";
 
 const ProjectClient: React.FC = () => {
   const PROJECTS = Projects();
@@ -29,7 +29,7 @@ const ProjectClient: React.FC = () => {
           <ProjectDetail currentProject={currentProject} />
         </>
       ) : (
-        <NotFound />
+        <Loading />
       )}
     </>
   );

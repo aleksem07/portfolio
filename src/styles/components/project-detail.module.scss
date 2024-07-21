@@ -30,6 +30,7 @@
 }
 
 .project_detail__desc_container {
+  width: 100%;
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -50,6 +51,8 @@
 }
 
 .project_detail__links_container {
+  display: flex;
+  justify-content: space-between;
   flex: 1;
   align-items: end;
   display: flex;
@@ -57,5 +60,20 @@
 
   @media (max-width: $width-tablet - 1) {
     justify-content: center;
+  }
+}
+
+.project_detail__list {
+  display: flex;
+  gap: 15px;
+}
+
+.project_detail__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  &_title {
+    font-weight: 500;
   }
 }

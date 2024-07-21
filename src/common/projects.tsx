@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-interface IProject {
+export interface IProject {
   id: string;
   title: string;
   description: string;
@@ -8,6 +8,8 @@ interface IProject {
   pageName: string;
   github: string;
   deploy: string;
+  stack?: string[];
+  layout?: string;
 }
 
 const Projects = () => {
@@ -15,7 +17,7 @@ const Projects = () => {
     {
       id: uuidv4(),
       title: "Салон красоты",
-      description: "Описание проекта",
+      description: "Лендинг для мастера ногтевого сервиса",
       image: "/projects/nail-salon.jpg",
       pageName: "nail-salon",
       github: "https://github.com/aleksem07/nail-salon",
@@ -23,8 +25,20 @@ const Projects = () => {
     },
     {
       id: uuidv4(),
+      title: "Фильтры для маркетплейса",
+      description: "Создание формы с фильтрами для маркетплейса",
+      image: "/projects/bitrix-markup-stub.png",
+      pageName: "marketplace-filters",
+      github: "https://github.com/aleksem07/bitrix-markup-stub/pull/2",
+      deploy: "https://aleksem07.github.io/bitrix-markup-stub/",
+      stack: ["pug", "javascript", "sass", "gulp"],
+      layout:
+        "https://www.figma.com/design/Hb00ywFQootjKmQtNxGppR/Untitled-(Copy)?t=7wq4B9t1SA4xMhSo-0",
+    },
+    {
+      id: uuidv4(),
       title: "По полочкам",
-      description: "Описание проекта",
+      description: "Многостраничный книжный интернет магазин",
       image: "/projects/onShelves.png",
       pageName: "on-shelves",
       github: "https://github.com/aleksem07/onShelves",
@@ -33,7 +47,7 @@ const Projects = () => {
     {
       id: uuidv4(),
       title: "GraphiQL",
-      description: "Описание проекта",
+      description: "Песочница GraphiQL",
       image: "/projects/graphiql.png",
       pageName: "graphiql",
       github: "https://github.com/aleksem07/graphiql-app/pull/3",
@@ -42,7 +56,7 @@ const Projects = () => {
     {
       id: uuidv4(),
       title: "Kekstagram",
-      description: "Описание проекта",
+      description: "Небольшой проект по типу Instagram",
       image: "/projects/kekstagram.png",
       pageName: "kekstagram",
       github: "https://github.com/aleksem07/kekstagram",
@@ -51,7 +65,7 @@ const Projects = () => {
     {
       id: uuidv4(),
       title: "Cat Energy",
-      description: "Описание проекта",
+      description: "Многостраничный интернет магазин для животных",
       image: "/projects/cat-energy.png",
       pageName: "cat-energy",
       github: "https://github.com/aleksem07/catEnergy",
@@ -60,7 +74,7 @@ const Projects = () => {
     {
       id: uuidv4(),
       title: "Drink2go",
-      description: "Описание проекта",
+      description: "Многостраничный интернет магазин по продаже кофе",
       image: "/projects/drink-to-go.png",
       pageName: "drink2go",
       github: "https://github.com/aleksem07/Drink2Go",
@@ -69,7 +83,7 @@ const Projects = () => {
     {
       id: uuidv4(),
       title: "Customer Development",
-      description: "Описание проекта",
+      description: "Лендинг события",
       image: "/projects/customer-development.jpg",
       pageName: "customer-development",
       github: "https://github.com/aleksem07/customer_development--landing",
@@ -78,7 +92,7 @@ const Projects = () => {
     {
       id: uuidv4(),
       title: "Scandi",
-      description: "Описание проекта",
+      description: "Лендинг для агентства дизайна",
       image: "/projects/scandi.jpg",
       pageName: "scandi",
       github: "https://github.com/aleksem07/htmlacademy-marathon5.0",
@@ -87,7 +101,7 @@ const Projects = () => {
     {
       id: uuidv4(),
       title: "Plants",
-      description: "Описание проекта",
+      description: "Лендинг садоводов",
       image: "/projects/plants.png",
       pageName: "plants",
       github: "https://github.com/aleksem07/plants",
@@ -96,7 +110,7 @@ const Projects = () => {
     {
       id: uuidv4(),
       title: "Портфолио",
-      description: "Описание проекта",
+      description: "Сайт-визитка",
       image: "/projects/portfolio.png",
       pageName: "portfolio",
       github: "https://github.com/aleksem07/portfolio",
