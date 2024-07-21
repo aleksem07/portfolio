@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 
 import { useEffect } from "react";
@@ -23,6 +24,7 @@ const YandexMetrika = () => {
     })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
     ym(97881656, "init", {
+      defer: true,
       clickmap: true,
       trackLinks: true,
       accurateTrackBounce: true,

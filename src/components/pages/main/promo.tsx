@@ -6,7 +6,7 @@ const Promo = () => {
   return (
     <section className={styles.promo}>
       <h2 className={styles.promo__title}>
-        {"Разработка динамичных и адаптивных веб-сайтов для вашего бизнеса."}
+        {"Разработка динамичных и адаптивных веб-сайтов для вашего бизнеса"}
       </h2>
       <Link className="button" href={ROUTES.WORKS}>
         {"Посмотреть работы"}
