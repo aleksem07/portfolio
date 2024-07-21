@@ -6,18 +6,20 @@ const ProjectLinks: React.FC<{ currentProject: any }> = ({
   currentProject,
 }) => (
   <>
-    <li>
-      <Link href={currentProject.deploy} target={"_blank"}>
-        <Image
-          className="rounded-full bg-white"
-          src={"/stack/http.svg"}
-          alt="Deploy"
-          width={50}
-          height={50}
-          title="deploy"
-        />
-      </Link>
-    </li>
+    {currentProject.deploy && (
+      <li>
+        <Link href={currentProject.deploy} target={"_blank"}>
+          <Image
+            className="rounded-full bg-white"
+            src={"/stack/http.svg"}
+            alt="Deploy"
+            width={50}
+            height={50}
+            title="deploy"
+          />
+        </Link>
+      </li>
+    )}
     <li>
       <Link href={currentProject.github} target={"_blank"}>
         <Image
@@ -30,7 +32,7 @@ const ProjectLinks: React.FC<{ currentProject: any }> = ({
         />
       </Link>
     </li>
-    {currentProject.layout ? (
+    {currentProject.layout && (
       <li>
         <Link href={currentProject.layout} target={"_blank"}>
           <Image
@@ -43,7 +45,7 @@ const ProjectLinks: React.FC<{ currentProject: any }> = ({
           />
         </Link>
       </li>
-    ) : null}
+    )}
   </>
 );
 

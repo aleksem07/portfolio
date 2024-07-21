@@ -1,5 +1,6 @@
 // @ts-nocheck
 "use client";
+import Image from "next/image";
 
 import { useEffect } from "react";
 
@@ -34,7 +35,7 @@ const YandexMetrika = () => {
   return (
     <noscript>
       <div>
-        <img
+        <Image
           src="https://mc.yandex.ru/watch/97881656"
           style={{ position: "absolute", left: "-9999px" }}
           alt=""

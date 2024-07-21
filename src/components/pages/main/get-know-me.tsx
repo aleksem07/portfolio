@@ -10,16 +10,14 @@ const GetKnowMe = () => {
     <section className={styles.get_know_me}>
       <BackgroundBall left="15%" top="-30%" />
       <div className={styles.get_know_me__desc}>
-        <h3 className={styles.get_know_me__title}>
-          {"Давайте познакомимся поближе"}
-        </h3>
+        <h3 className={styles.get_know_me__title}>{"Давайте познакомимся"}</h3>
         <p className={styles.get_know_me__text}>
           {
             "Я помогу вам сэкономить время и деньги на разработке сайта для вашего бизнеса. В портфолио представлен широкий спектр работ."
           }
         </p>
         <Link className={`button ${styles.about_button}`} href={ROUTES.ABOUT}>
-          {"Узнайте больше"}
+          {"Узнайте больше обо мне"}
         </Link>
         <Link
           className={`button ${styles.about_button}`}
